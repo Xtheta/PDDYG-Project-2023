@@ -210,7 +210,7 @@ def SearchRangeTree2d (root, x1, x2, y1, y2):
                 results.append(vl.point)
             if (x1 <= vl.point[0]):                                     # Search the associated ytree at the left child of current node in xtree
                 if vl.right != None:
-                    results += SearchRangeTree1d(vl.right, y1, y2, 0)
+                    results += SearchRangeTree1d(vl.right, y1, y2, 1)
                 vl = vl.left
             else:
                 vl = vl.right
@@ -221,7 +221,7 @@ def SearchRangeTree2d (root, x1, x2, y1, y2):
                     results.append(vr.point)
             if ( x2 >= vr.point[0] ):                                   # Search the associated ytree at the left child of current node in xtree
                 if vr.left != None:
-                    results += SearchRangeTree1d(vr.left, y1, y2, 0)
+                    results += SearchRangeTree1d(vr.left, y1, y2, 1)
                 vr = vr.right
             else:
                     vr = vr.left
