@@ -186,7 +186,6 @@ def SearchRangeTree1d (root, p1, p2, dim):
 
 
 # 2D RANGE SEARCH FUNCTION 
-
 def SearchRangeTree2d (root, x1, x2, y1, y2):
     '''
     Performs 2D range search
