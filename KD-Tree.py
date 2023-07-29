@@ -10,7 +10,7 @@ surnames = []
 awards = []
 education = []
 
-with open("computer_scientists.csv", 'r') as file:
+with open("kdtree_example_set.csv", 'r') as file:
     csv_reader=csv.reader(file)
     for row in csv_reader:
         surnames.append(row[0])
