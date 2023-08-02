@@ -15,7 +15,7 @@ class Rectangle:
         self.high = high
 
     def __str__(self):
-        return " Xmin= " + str(self.low.x) + " Ymin= " \
+        return  " Xmin= " + str(self.low.x) + " Ymin= " \
             + str(self.low.y) + " Xmax= " + str(self.high.x) + " Ymax= " + str(self.high.y)
 
     @property
@@ -35,15 +35,6 @@ class Rectangle:
             Point(min(self.low.x, rec.low.x), min(self.low.y, rec.low.y)),
             Point(max(self.high.x, rec.high.x), max(self.high.y, rec.high.y))
         )
-
-    def overlaps(self, rec: 'Rectangle'):
-
-        return self.low.x <= rec.low.x <= self.high.x and self.low.x <= rec.high.x <= self.high.x \
-            and self.low.y <= rec.low.y <= self.high.y and self.low.y <= rec.high.y <= self.high.y
-
-    def same_as(self, rec: 'Rectangle'):
-        return self.low.x == rec.low.x and self.high.x == rec.high.x and self.low.y == rec.low.y \
-            and self.high.y == rec.high.y
 
 
 def union(rect1: Rectangle, rect2: Rectangle) -> Rectangle:
@@ -95,7 +86,6 @@ class Entry:  # kathe entry exei onoma-child pointer h data name kai to rectangl
     def is_leaf(self):
         return self.child is None
 
-
 class RTree:
     def __init__(self, maximum, minimum):
         self.M = maximum
@@ -121,35 +111,8 @@ class RTree:
         self.adjust_tree_strategy(temp, split_node)
         #  if len(temp.entries) > self.M:
 
-    def search_tree(self, rec: Rectangle, node: Node = None):
-
-        result: list[Node] = []
-        if node is None:
-            node = self.root
-
-        if not node.is_leaf:
-            for entry in node.entries:
-                if entry.rec.overlaps(rec):
-                    temp = self.search_tree(rec, entry.child)
-                    if temp is not None:
-                        if type(temp) is list:
-                            result.extend(temp)
-                        else:
-                            result.append(temp)
-            return result
-            # overlaps = [entry.rec.overlaps(rec) for entry in node.entries]
-        if node.is_leaf:  # oxi parentheseis dn einai synarthiseis
-            for entry in node.entries:
-
-                if entry.rec.overlaps(rec):
-                    return node
-
-
-
-
-
-
-
+    def search_tree(self):
+        pass
 
     @staticmethod
     def choose_leaf(node: Node, rec: Rectangle):
@@ -367,28 +330,23 @@ for pd in range(len(data)):
 
     #  ena point ana rectangle gia arxh
 
-# all_leaf_entries = [r.root.entries[v1].child.entries[v2].child.entries for v1 in range(len(r.root.entries))
-#                     for v2 in range(len(r.root.entries[v1].child.entries))]
-# # for v3 in range(len(all_leaf_entries)):
-# #     for v4 in range(len(all_leaf_entries[v3])):
-# #         print(all_leaf_entries[v3][v4])
-#
-# for v1 in range(len(r.root.entries)):
-#     print("====================================")
-#     print("level 1 node ")
-#     print(r.root.entries[v1].child)
-#     for v2 in range(len(r.root.entries[v1].child.entries)):
-#
-#         print("_______________________________")
-#         print("level 2 node")
-#         print(r.root.entries[v1].child.entries[v2].child)
-#
-#         for v3 in range(len(r.root.entries[v1].child.entries[v2].child.entries)):
-#
-#             print(r.root.entries[v1].child.entries[v2].child.entries[v3])
+all_leaf_entries = [r.root.entries[v1].child.entries[v2].child.entries for v1 in range(len(r.root.entries))
+                    for v2 in range(len(r.root.entries[v1].child.entries))]
+# for v3 in range(len(all_leaf_entries)):
+#     for v4 in range(len(all_leaf_entries[v3])):
+#         print(all_leaf_entries[v3][v4])
 
-for lol in range(0, 4):
-    print(" N E X T")
-    for lol2 in range(len(r.search_tree(Rectangle(Points[3], Points[3]))[lol].entries)):
-        print(r.search_tree(Rectangle(Points[3], Points[3]))[lol].entries[lol2])
-print(Rectangle(Points[3], Points[3]))
+for v1 in range(len(r.root.entries)):
+    print("====================================")
+    print("level 1 node ")
+    print(r.root.entries[v1].child)
+    for v2 in range(len(r.root.entries[v1].child.entries)):
+
+        print("_______________________________")
+        print("level 2 node")
+        print(r.root.entries[v1].child.entries[v2].child)
+
+        for v3 in range(len(r.root.entries[v1].child.entries[v2].child.entries)):
+
+            print(r.root.entries[v1].child.entries[v2].child.entries[v3])
+
