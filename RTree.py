@@ -317,7 +317,7 @@ for line in lines:
 # edw ton kwdika exontas dhmiourghsei ena rtree pernoyme to mix max kai kanoyme antistoixa group ta rectangles?
 Points = []
 Rectangles = []
-r = RTree(5, 2)
+r = RTree(4, 2)
 a = ['Node', 0]
 for pd in range(len(data)):
     Points.append(Point(data[pd][0], data[pd][1]))
@@ -332,11 +332,21 @@ for pd in range(len(data)):
 
 all_leaf_entries = [r.root.entries[v1].child.entries[v2].child.entries for v1 in range(len(r.root.entries))
                     for v2 in range(len(r.root.entries[v1].child.entries))]
-for v3 in range(len(all_leaf_entries)):
-    for v4 in range(len(all_leaf_entries[v3])):
-        print(all_leaf_entries[v3][v4])
+# for v3 in range(len(all_leaf_entries)):
+#     for v4 in range(len(all_leaf_entries[v3])):
+#         print(all_leaf_entries[v3][v4])
 
 for v1 in range(len(r.root.entries)):
-    print("node"+str(v1+1)+'\n')
+    print("====================================")
+    print("level 1 node ")
+    print(r.root.entries[v1].child)
     for v2 in range(len(r.root.entries[v1].child.entries)):
-        print()
+
+        print("_______________________________")
+        print("level 2 node")
+        print(r.root.entries[v1].child.entries[v2].child)
+
+        for v3 in range(len(r.root.entries[v1].child.entries[v2].child.entries)):
+
+            print(r.root.entries[v1].child.entries[v2].child.entries[v3])
+
