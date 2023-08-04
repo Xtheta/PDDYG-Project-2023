@@ -129,5 +129,5 @@ point_list = [Point(75, 3), Point(67, 5), Point(70, 10), Point(71, 5), Point(74,
 rect = Rectangle(low_point, high_point)
 qt = QuadTree(rect)
 
-qt.insert(point_list[0])
-qt.insert(point_list[1])
+for ad in range(len(point_list)):
+    qt.insert(point_list[ad])
