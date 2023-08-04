@@ -41,8 +41,9 @@ class Node:
         self.parent = parent
         self.point = point
         # self.NW, self.NE, self.SW, self.SE = None, None, None, None
-        self.directions: list= [None, None, None, None]
+        self.directions: list = [None, None, None, None]
         self.rec = rec
+
     def is_root(self):
         return self.parent is None
 
@@ -52,9 +53,6 @@ class Node:
                 if i.is_leaf is False:
                     return False
         return True
-
-def new_node(isleaf, point):
-    return Node(isleaf, point)
 
 
 class QuadTree:
@@ -74,14 +72,14 @@ class QuadTree:
                     node.point = point
                     loop_check += 1
                 else:
-                    node = self.splitnode(node, node.rec, point)
+                    node = self.split_node(node, node.rec, point)
                     loop_check += 1
             else:
                 for child_node in node.directions:
                     if child_node.rec.overlaps_point(point):
                         node = child_node
 
-    def splitnode(self, node: Node, rec: Rectangle, point: Point):
+    def split_node(self, node: Node, rec: Rectangle, point: Point):
 
         x_axis = rec.center().x < point.x
         y_axis = rec.center().y > point.y
@@ -111,34 +109,24 @@ class QuadTree:
         for i in range(0, 4):
             if i != index and i != index2:
                 node.directions[i] = Node(True, rectangles[i], node, None)
-        print("index1")
-        print(index)
-        print("index2")
-        print(index2)
+
         if index != index2:
             node.directions[index] = Node(True, rectangles[index], node, point)
             node.directions[index2] = Node(True, rectangles[index2], node, node.point)
         else:
-            print("trexw")
             temp = Node(False, rectangles[index], node, node.point)
             node.directions[index] = temp
-            self.splitnode(node.directions[index], rectangles[index], point)
+            self.split_node(node.directions[index], rectangles[index], point)
         node.point = None
         return node
 
 
-low = Point(65,0)
-high = Point(90, 12)
+low_point = Point(65, 0)
+high_point = Point(90, 12)
 
-point_list = []
-point_list.append(Point(75, 3))
-point_list.append(Point(67, 5))
-point_list.append(Point(70, 10))
-point_list.append(Point(71, 5))
-point_list.append(Point(74, 9))
-point_list.append(Point(80, 3))
+point_list = [Point(75, 3), Point(67, 5), Point(70, 10), Point(71, 5), Point(74, 9), Point(80, 3)]
 
-rect = Rectangle(low, high)
+rect = Rectangle(low_point, high_point)
 qt = QuadTree(rect)
 
 qt.insert(point_list[0])
