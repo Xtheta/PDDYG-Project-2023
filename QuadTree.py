@@ -123,7 +123,7 @@ class QuadTree:
             temp = Node(False, rectangles[index], node, node.point)
             node.directions[index] = temp
             self.splitnode(node.directions[index], rectangles[index], point)
-
+        node.point = None
         return node
 
 
