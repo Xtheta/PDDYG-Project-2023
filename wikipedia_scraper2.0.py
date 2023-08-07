@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup as bs
 import re 
 import csv
 
-#set up the driver 
+#set up the driver
 url = 'https://en.wikipedia.org/wiki/List_of_computer_scientists'
 response = requests.get(url)
 
