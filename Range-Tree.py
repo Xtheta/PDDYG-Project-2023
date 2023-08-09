@@ -118,8 +118,3 @@ if __name__ == "__main__":
     #print(range_tree.root.point)
 
     range_tree.print_range_tree(range_tree.root)
-
-
-    #unique_sur = []
-    #print(range_tree.SearchRangeTree1d(range_tree.root, unique_sur, 1, 5, False))
-    #print(range_tree.SearchRangeTree2d(range_tree.root, unique_sur, 65, 82, 2, 12))
