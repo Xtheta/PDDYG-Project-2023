@@ -32,20 +32,47 @@ class Rectangle:
         return self.width * self.height
 
     def changed_rectangle(self, rec: 'Rectangle'):
-
         return Rectangle(
             Point(min(self.low.x, rec.low.x), min(self.low.y, rec.low.y)),
             Point(max(self.high.x, rec.high.x), max(self.high.y, rec.high.y))
         )
 
     def overlaps(self, rec: 'Rectangle'):
+        if self.same_as(rec):
+            return True
 
-        return self.low.x <= rec.low.x <= self.high.x and self.low.x <= rec.high.x <= self.high.x \
-            and self.low.y <= rec.low.y <= self.high.y and self.low.y <= rec.high.y <= self.high.y
+        rec_xright = max(self.high.x, rec.low.x) == rec.low.x
+        if self.high.x == rec.low.x:
+            rec_xright = 0
+
+        rec_yright = max(self.high.y, rec.low.y) == rec.low.y
+        if self.high.y == rec.low.y:
+            rec_yright = 0
+
+        rec_xleft = min(self.low.x, rec.high.x) == rec.high.x
+        if self.low.x == rec.high.x:
+            rec_xleft = 0
+
+        rec_yleft = min(self.low.y, rec.high.y) == rec.high.y
+        if self.low.y == rec.high.y:
+            rec_yleft = 0
+
+        return not (rec_xright or rec_xleft or rec_yright or rec_yleft)
 
     def same_as(self, rec: 'Rectangle'):
         return self.low.x == rec.low.x and self.high.x == rec.high.x and self.low.y == rec.low.y \
             and self.high.y == rec.high.y
+
+    def intersects(self, rec: 'Rectangle'):
+        xmin = max(self.low.x, rec.low.x)
+        ymin = max(self.low.y, rec.low.y)
+        xmax = min(self.high.x, rec.high.x)
+        ymax = min(self.high.y, rec.high.y)
+
+        min_point = Point(xmin, ymin)
+        max_point = Point(xmax, ymax)
+        new_rec = Rectangle(min_point, max_point)
+        return new_rec
 
 
 def union(rect1: Rectangle, rect2: Rectangle) -> Rectangle:
@@ -132,7 +159,11 @@ class RTree:
         if not node.is_leaf:
             for entry in node.entries:
                 if entry.rec.overlaps(rec):
-                    temp = self.search_tree(rec, entry.child)
+                    new_rec = entry.rec.intersects(rec)
+                    print("new")
+                    print(new_rec)
+                    temp = self.search_tree(new_rec, entry.child)
+                    #  den afhneis to rec idio vaseis ton yposynolo-tomh
                     if temp is not None:
                         result.extend(temp)
             return result
@@ -229,7 +260,6 @@ class RTree:
 
 
 def find_least_area(entries: List[Entry], rec: Rectangle):
-
     areas = [child.rec.area() for child in entries]
     enlargements = [rec.changed_rectangle(child.rec).area() - areas[j] for j, child in enumerate(entries)]
     min_enlargement = min(enlargements)
@@ -251,7 +281,6 @@ def find_indices(list_to_check, item_to_find):
 
 
 def quadratic_split(tree: RTree, node: Node):
-
     entries = node.entries[:]  # copy tis listas kata value poy oi allages den pernane
     seed1, seed2 = _pick_seeds(entries)  # dio entries ta opoia meta petame apo tin lista mas
     entries.remove(seed1)
@@ -260,7 +289,7 @@ def quadratic_split(tree: RTree, node: Node):
     rec1: Rectangle
     rec2: Rectangle
     rec1, rec2 = (seed1.rec, seed2.rec)  # pleiades gia na glytwsoume xwro apparently
-    num_entries = len(entries)     # ta entries moy sto node pera apo ta dio p eksetasame
+    num_entries = len(entries)  # ta entries moy sto node pera apo ta dio p eksetasame
     while num_entries > 0:
         # If one group has so few entries that all the rest must be assigned to it in order for it to meet the
         # min_entries requirement, assign them and stop. (If both groups are underfull, then proceed with the
@@ -325,8 +354,8 @@ def _pick_next(remaining_entries: List[Entry],
     max_diff = None
     result = None
     for e in remaining_entries:
-        d1 = group1_rect.changed_rectangle(e.rec).area() - group1_area   # gained area
-        d2 = group2_rect.changed_rectangle(e.rec).area() - group2_area   # gained area
+        d1 = group1_rect.changed_rectangle(e.rec).area() - group1_area  # gained area
+        d2 = group2_rect.changed_rectangle(e.rec).area() - group2_area  # gained area
         diff = math.fabs(d1 - d2)  # epilogh toy entry poy einai pio konta sto ena apo ta dio rectangle mas
         # an htan makria kai apo ta dio to d1-d2 tha plisiaze to 0 , omws otan einai pio konta sto ena
         # tha fanei sth diafora tous
@@ -344,9 +373,12 @@ if __name__ == '__main__':
     r = RTree(4, 2)
 
     for pd in range(len(df)):
+        # data_rec = Rectangle(Point(ord(df[0][pd]), df[1][pd]), Point(ord(df[0][pd]), df[1][pd]))
         data_rec = Rectangle(Point(ord(df[0][pd]), df[1][pd]), Point(ord(df[0][pd]), df[1][pd]))
         r.insertion(data_rec, pd)
-    a = r.search_tree(Rectangle(Point(ord('a'), 1), Point(ord('a'), 1)))
+
+    a = r.search_tree(Rectangle(Point(ord('a'), 1), Point(ord('i'), 5)))
 
     print(f"{len(a)} matches were found :")
     print(a)
+    print(df.iloc[a])
