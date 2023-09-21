@@ -44,6 +44,7 @@ class Node:
         self.directions: list = [None, None, None, None]
         self.rec = rec
 
+    @property
     def is_root(self):
         return self.parent is None
 
@@ -53,6 +54,9 @@ class Node:
                 if i.is_leaf is False:
                     return False
         return True
+
+    def is_leaf(self) -> bool:
+        return self.is_leaf
 
 
 class QuadTree:
@@ -81,13 +85,13 @@ class QuadTree:
 
     def split_node(self, node: Node, rec: Rectangle, point: Point):
 
-        x_axis = rec.center().x < point.x
+        x_axis = rec.center().x < point.x  # apo ayto ews to epomeno comment mporei na ginei
         y_axis = rec.center().y > point.y
         index = 2*int(x_axis) + int(y_axis)
 
         x_axis2 = rec.center().x < node.point.x
         y_axis2 = rec.center().y > node.point.y
-        index2 = 2 * int(x_axis2) + int(y_axis2)
+        index2 = 2 * int(x_axis2) + int(y_axis2)  # mia sinarthsh pou na ta periexei ola
 
         rectangles = []
         p1 = Point(rec.low.x, rec.center().y)
@@ -120,14 +124,31 @@ class QuadTree:
         node.point = None
         return node
 
+    def search(self, node: Node, rec: Rectangle, point: Point):
+        x_axis = rec.center().x < point.x
+        y_axis = rec.center().y > point.y
+        index = 2 * int(x_axis) + int(y_axis)
 
-low_point = Point(65, 0)
-high_point = Point(90, 12)
+        if node.is_leaf() and node.is_root():
+            return node
 
-point_list = [Point(75, 3), Point(67, 5), Point(70, 10), Point(71, 5), Point(74, 9), Point(80, 3)]
+        if node.directions[index].is_leaf():
+            return node.directions[index]
+        else:
+            return self.search(node.directions[index], node.directions[index].rec, point)
 
-rect = Rectangle(low_point, high_point)
-qt = QuadTree(rect)
 
-for ad in range(len(point_list)):
-    qt.insert(point_list[ad])
+# Press the green button in the gutter to run the script.
+if __name__ == '__main__':
+    low_point = Point(65, 0)
+    high_point = Point(90, 12)
+
+    point_list = [Point(75, 3), Point(67, 5), Point(70, 10), Point(71, 5), Point(74, 9), Point(80, 3)]
+
+    rect = Rectangle(low_point, high_point)
+    qt = QuadTree(rect)
+
+    for ad in range(len(point_list)):
+        qt.insert(point_list[ad])
+
+# See PyCharm help at https://www.jetbrains.com/help/pycharm/
