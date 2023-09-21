@@ -1,5 +1,4 @@
 import csv
-import pandas as pd
 
 
 #LOAD DATA FROM CSV FILE
