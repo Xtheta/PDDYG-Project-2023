@@ -7,7 +7,7 @@ def open_csv_file(names, awards, surname_init):
     with open("scientists.csv", 'r', encoding='utf-8') as file:
         csv_reader=csv.reader(file)
         for row in csv_reader:
-            names.append(row[0])           # removes the single quote character from the string
+            names.append(row[0])     
             awards.append(row[1])
     
     for x in range(len(names)):
