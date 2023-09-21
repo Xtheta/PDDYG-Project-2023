@@ -1,23 +1,27 @@
 import csv
+import pandas as pd
+
 
 #LOAD DATA FROM CSV FILE
-#THE DATABASE FEATURES THE SURNAMES, AWARDS AND EDUCATION OF SEVERAL COMPUTER SCIENTISTS 
-def open_csv_file(surnames, awards, first_letter):
-    with open("kdtree_example_set.csv", 'r') as file:
+#THE DATABASE FEATURES THE NAMES, AWARDS AND EDUCATION OF SEVERAL COMPUTER SCIENTISTS 
+def open_csv_file(names, awards, surname_init):
+    with open("scientists.csv", 'r', encoding='utf-8') as file:
         csv_reader=csv.reader(file)
         for row in csv_reader:
-            surnames.append(row[0])
+            names.append(row[0])           # removes the single quote character from the string
             awards.append(row[1])
     
-    for x in range(len(surnames)):
-        first_letter.append(ord(surnames[x][0]))    # ord() returns the Unicode code from a given character
+    for x in range(len(names)):
+        words = names[x].split()                  # the surname is the last word of the string
+        surname_init.append(ord(words[-1][0]))    # ord() returns the Unicode code from a given character
     return 
 
 
 #NODE CLASS  
 class Node:
-    def __init__(self, point):
+    def __init__(self, point, name: None):
         self.point = point
+        self.name = name
         self.left = None
         self.right = None
         self.isLeaf = False
@@ -74,21 +78,16 @@ class KD_Tree:
         # 1 DIMENSION
         if check == 1:
             x = point
-            if (x >= range[0][0]  and x <= range[0][1] ) :
-                return True
-            else:
-                return False
+            return x >= range[0][0]  and x <= range[0][1] 
+
             
         # 2 DIMENSIONS
         elif check == 2:
             x = point[0]
             y = point[1]
 
-            if (x >= range[0][0]   and x <= range[0][1]  and y >= range[1][0]  and y <= range[1][1] ) :
-                return True
-            else:
-                return False
-
+            return x >= range[0][0]   and x <= range[0][1]  and y >= range[1][0]  and y <= range[1][1] 
+            
 
     def SearchKDTree1d (self, root, p1, p2, dim):
         """
@@ -104,11 +103,11 @@ class KD_Tree:
         if root == None:
             return nodes
         elif self.withinRange(root.point[dim], [(p1, p2)], 1):        # Check if the node is a valid node in range
-            nodes.append(root.point)
+            nodes.append(root.point)                                  
         
         nodes += self.SearchKDTree1d(root.left, p1, p2, dim)          # Search for nodes in left subtree
         nodes += self.SearchKDTree1d(root.right, p1, p2, dim)         # Search for nodes in right subtree
-        
+        #dokimase na valeis to root.point os orio tou diastimatos anazititsis
         return nodes
 
 
@@ -123,41 +122,61 @@ class KD_Tree:
             y1          : Starting range for y-coord
             y2          : Ending range for y-coord
         '''
-        results = []
+        nodes = []
 
         if root == None:
-            return results
+            return nodes
         elif self.withinRange(root.point, [(x1, x2), (y1, y2)], 2) :       # Check if the node is a valid node in range
-            results.append(root.point)
+            nodes.append(root.point)
 
-        results += self.SearchKDTree2d(root.left, x1, x2, y1, y2)          # Search for nodes in left subtree
-        results += self.SearchKDTree2d(root.right, x1, x2, y1, y2)         # Search for nodes in right subtree
+        nodes += self.SearchKDTree2d(root.left, x1, x2, y1, y2)          # Search for nodes in left subtree
+        nodes += self.SearchKDTree2d(root.right, x1, x2, y1, y2)         # Search for nodes in right subtree
             
-        return results
+        return nodes
 
 
 if __name__ == "__main__":
-    surnames = []
+    names = []
     awards = []
-    first_letter = []                               # The first_letter list holds the first letter of each computer scientist's surname
+    surname_init = []                               # The first_letter list holds the first letter of each computer scientist's surname
 
-    open_csv_file(surnames, awards, first_letter)
+
+    open_csv_file(names, awards, surname_init)
     awards = [eval(i) for i in awards]              # eval() parses the expression passed to this method and runs python expression within the program
     award_max=max(awards)
    
-    data = list(zip(first_letter,awards))           # Combine the first_letter and awards lists
+   # for x in range(len(surnames)):
+    #   print(surnames[x])
+
+    
+    data = list(zip(surname_init,awards))           # Combine the surname_init and awards lists
     
     nodeList = []
     for x in range(len(data)):
-        new_node=Node(data[x])
+        new_node=Node(data[x], names[x])
         nodeList.append(new_node)
     nodeList.sort(key=lambda node: node.point)
+
+    for x in range(len(nodeList)):
+       print(nodeList[x].point, nodeList[x].name)
+    
+   
 
     kd_tree = KD_Tree()
     kd_tree.root = kd_tree.build_kdtree(nodeList)
 
     #kd_tree.print_kdtree(kd_tree.root)
 
-    #print(kd_tree.SearchKDTree1d(kd_tree.root, 65, 71, 0))
+   # print(kd_tree.SearchKDTree1d(kd_tree.root, 65, 70, 0))
 
-    print(kd_tree.SearchKDTree2d(kd_tree.root, 65, 82, 2, 3))
+    print(kd_tree.SearchKDTree2d(kd_tree.root, 65, 66, 2, 3))
+    
+
+
+
+
+    
+
+
+             
+    
