@@ -43,7 +43,7 @@ class Rectangle:
         return (self.high.y + self.low.y)/2
 
     def center(self):
-        return Point(self.x_median(), self.y_median(),)
+        return Point(self.x_median(), self.y_median())
 
     def overlaps_point(self, point: Point):
         return self.low.x <= point.x <= self.high.x and self.low.y <= point.y <= self.high.y
@@ -108,7 +108,6 @@ class QuadTree:
             if node.is_leaf:
                 if node.point is None:
                     node.point = point
-
                     loop_check += 1
                 else:
                     node = self.split_node(node, node.rec, point)
