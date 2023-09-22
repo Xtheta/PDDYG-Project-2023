@@ -16,10 +16,6 @@ class Rectangle:
         self.low = low
         self.high = high
 
-    def __str__(self):
-        return " Xmin= " + str(self.low.x) + " Ymin= " \
-            + str(self.low.y) + " Xmax= " + str(self.high.x) + " Ymax= " + str(self.high.y)
-
     @property
     def width(self):
         return self.high.x - self.low.x
@@ -28,7 +24,7 @@ class Rectangle:
     def height(self):
         return self.high.y - self.low.y
 
-    def area(self) -> float:
+    def area(self):
         return self.width * self.height
 
     def changed_rectangle(self, rec: 'Rectangle'):
