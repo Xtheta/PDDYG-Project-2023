@@ -144,13 +144,9 @@ class QuadTree:
 
         node.is_leaf = False
 
-        x_axis = rec.center().x < point.x  # apo ayto ews to epomeno comment mporei na ginei
-        y_axis = rec.center().y > point.y
-        index = 2*int(x_axis) + int(y_axis)
+        index = axis(rec, point)
 
-        x_axis2 = rec.center().x < node.point.x
-        y_axis2 = rec.center().y > node.point.y
-        index2 = 2 * int(x_axis2) + int(y_axis2)  # mia sinarthsh pou na ta periexei ola
+        index2 = axis(rec, node.point)  # mia sinarthsh pou na ta periexei ola
 
         rectangles = []
         p1 = Point(rec.low.x, rec.center().y)
@@ -186,52 +182,59 @@ class QuadTree:
         return node
 
     def point_search(self, node: Node, rec: Rectangle, point: Point):
-        x_axis = rec.center().x < point.x
-        y_axis = rec.center().y > point.y
 
-        index = 2 * int(x_axis) + int(y_axis)
+        index = axis(rec, point)
 
         if node.isleaf() and node.is_root:
 
             return node.point.data
 
         if node.directions[index].isleaf():
+            if node.directions[index].point is not None:
+                return node.directions[index].point.data
+            return None
 
-            return node.directions[index].point.data
         else:
 
             return self.point_search(node.directions[index], node.directions[index].rec, point)
 
-    def range_search(self, node: Node, nrec: Rectangle, drec: Rectangle):
+    def range_search(self, node: Node, drec: Rectangle):
         result = []
         if node.is_root and node.isleaf():
             return node.point.data
         if node.isleaf():
-            print("mpainw")
+
             if drec.overlaps_point(node.point):
                 return node.point.data
         else:
             for i in range(0, 4):
-                print(f"range is {i}")
-                print(node.directions[i].rec)
-
                 if node.directions[i].rec.overlaps(drec):
                     if node.directions[i].point is None and node.directions[i].isleaf():
                         continue
-                    result.extend(self.range_search(node.directions[i], node.directions[i].rec, drec))
+                    result.extend(self.range_search(node.directions[i], drec))
         return result
+
+
+def axis(rec: Rectangle, point: Point):
+
+    x_axis = rec.center().x < point.x
+    y_axis = rec.center().y > point.y
+    index = 2 * int(x_axis) + int(y_axis)
+
+    return index
+
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     #
     df = pd.read_csv("data.txt", sep=" ", header=None)
 
-    Xmax = ord(df[0].max())
-    Xmin = ord(df[0].min())
-    Ymax = df[1].max()
-    Ymin = df[1].min()
-    low_point = Point(Xmin, Ymin)
-    high_point = Point(Xmax, Ymax)
+    x_max = ord(df[0].max())
+    x_min = ord(df[0].min())
+    y_max = df[1].max()
+    y_min = df[1].min()
+    low_point = Point(x_min, y_min)
+    high_point = Point(x_max, y_max)
     rect = Rectangle(low_point, high_point)
 
     qt = QuadTree(rect)
@@ -240,13 +243,11 @@ if __name__ == '__main__':
         p = Point(ord(df[0][pd]),  df[1][pd], pd)
         qt.insert(p)
 
-    #print(qt.root.directions[1].directions[0].point.data)
-    #fl = qt.point_search(qt.root, qt.rec, Point(ord('a'), 1))
-    #print(fl)
-    print(f"it is what it is {qt.root.directions[1].rec}")
-    drec = Rectangle(Point(ord('a'), 1), Point(ord('c'), 3))
-    print(f"drec is {drec}")
-    rs = qt.range_search(qt.root, qt.rec, drec)
+    # print(qt.root.directions[1].directions[0].point.data)
+    fl = qt.point_search(qt.root, qt.rec, Point(ord('a'), 2))
+    print(fl)
+    data_rec = Rectangle(Point(ord('a'), 1), Point(ord('e'), 2))
+    rs = qt.range_search(qt.root, data_rec)
     print(rs)
 
     # low_point = Point(65, 0)
