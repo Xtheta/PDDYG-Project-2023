@@ -89,13 +89,6 @@ class Node:
     def is_root(self):
         return self.parent is None
 
-    def all_leaves(self):
-        if not self.is_root():
-            for i in self.directions:
-                if i.is_leaf is False:
-                    return False
-        return True
-
     def isleaf(self) -> bool:
         return self.is_leaf
 
