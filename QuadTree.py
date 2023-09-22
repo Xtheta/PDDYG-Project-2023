@@ -167,7 +167,6 @@ class QuadTree:
         index = axis(rec, point)
 
         if node.isleaf() and node.is_root:
-
             return node.point.data
 
         if node.directions[index].isleaf():
@@ -181,10 +180,11 @@ class QuadTree:
 
     def range_search(self, node: Node, drec: Rectangle):
         result = []
+
         if node.is_root and node.isleaf():
             return node.point.data
-        if node.isleaf():
 
+        if node.isleaf():
             if drec.overlaps_point(node.point):
                 return node.point.data
         else:
