@@ -33,7 +33,7 @@ class Rectangle:
     def height(self):
         return self.high.y - self.low.y
 
-    def area(self) -> float:
+    def area(self):
         return self.width * self.height
 
     def x_median(self):
@@ -73,17 +73,6 @@ class Rectangle:
     def same_as(self, rec: 'Rectangle'):
         return self.low.x == rec.low.x and self.high.x == rec.high.x and self.low.y == rec.low.y \
             and self.high.y == rec.high.y
-
-    def intersects(self, rec: 'Rectangle'):
-        xmin = max(self.low.x, rec.low.x)
-        ymin = max(self.low.y, rec.low.y)
-        xmax = min(self.high.x, rec.high.x)
-        ymax = min(self.high.y, rec.high.y)
-
-        min_point = Point(xmin, ymin)
-        max_point = Point(xmax, ymax)
-        new_rec = Rectangle(min_point, max_point)
-        return new_rec
 
 
 class Node:
@@ -224,9 +213,8 @@ def axis(rec: Rectangle, point: Point):
     return index
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    #
+
     df = pd.read_csv("data.txt", sep=" ", header=None)
 
     x_max = ord(df[0].max())
@@ -243,25 +231,8 @@ if __name__ == '__main__':
         p = Point(ord(df[0][pd]),  df[1][pd], pd)
         qt.insert(p)
 
-    # print(qt.root.directions[1].directions[0].point.data)
     fl = qt.point_search(qt.root, qt.rec, Point(ord('a'), 2))
     print(fl)
-    data_rec = Rectangle(Point(ord('a'), 1), Point(ord('e'), 2))
+    data_rec = Rectangle(Point(ord('a'), 1), Point(ord('c'), 3))
     rs = qt.range_search(qt.root, data_rec)
     print(rs)
-
-    # low_point = Point(65, 0)
-    # high_point = Point(90, 12)
-    #
-    # point_list = [Point(75, 3), Point(67, 5), Point(70, 10), Point(71, 5), Point(74, 9), Point(80, 3)]
-    #
-    # rect = Rectangle(low_point, high_point)
-    # qt = QuadTree(rect)
-    #
-    # for ad in range(len(point_list)):
-    #     qt.insert(point_list[ad])
-
-    # print(f"{len(a)} matches were found :")
-    # print(a)
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
