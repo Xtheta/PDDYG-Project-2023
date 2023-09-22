@@ -144,7 +144,6 @@ class RTree:
         if len(temp.entries) > self.M:
             split_node = quadratic_split(self, temp)
         self.adjust_tree_strategy(temp, split_node)
-        #  if len(temp.entries) > self.M:
 
     def search_tree(self, rec: Rectangle, node: Node = None):
 
@@ -254,23 +253,24 @@ class RTree:
 
 
 def find_least_area(entries: List[Entry], rec: Rectangle):
-    areas = [child.rec.area() for child in entries]
+    areas = [child.rec.area() for child in entries]  # list with rectangles for possible insert
     enlargements = [rec.changed_rectangle(child.rec).area() - areas[j] for j, child in enumerate(entries)]
+    # rectangle englargement for each possible rectangle
     min_enlargement = min(enlargements)
-    instances = find_indices(enlargements, min_enlargement)
+    instances = find_indices(enlargements, min_enlargement)  # position of min possible rects
     if len(instances) == 1:
         return entries[instances[0]]
     else:
-        min_area = min([areas[i] for i in instances])
-        i = areas.index(min_area)
-        return entries[i]
+        min_area = min([areas[i] for i in instances])  # if more than one have the minimum value
+        i = areas.index(min_area)  # list with their original rec area
+        return entries[i]   # and choose that, otherwise the first is chosen
 
 
 def find_indices(list_to_check, item_to_find):
     indices = []
     for idx, value in enumerate(list_to_check):
         if value == item_to_find:
-            indices.append(idx)
+            indices.append(idx)  # finding positions of an instance and its duplicates in a list
     return indices
 
 
@@ -331,8 +331,8 @@ def _pick_seeds(entries: List[Entry]) -> (Entry, Entry):
     max_wasted_area = None
     e1: Entry
     e2: Entry
-    for e1, e2 in itertools.combinations(entries, 2):  # ola ta entries ana duio
-        combined_rect = e1.rec.changed_rectangle(e2.rec)  # dhmiourgoume to mbr gia ta entry mas
+    for e1, e2 in itertools.combinations(entries, 2):  # ola ta entries ana dio
+        combined_rect = e1.rec.changed_rectangle(e2.rec)  # dimiourgoume to mbr gia ta entry mas
         wasted_area = combined_rect.area() - e1.rec.area() - e2.rec.area()  # posos xwros xalietai = d =d1 -d2
         if max_wasted_area is None or wasted_area > max_wasted_area:  # vriskoume to d max
             max_wasted_area = wasted_area  # gia na kanoume split ekei
