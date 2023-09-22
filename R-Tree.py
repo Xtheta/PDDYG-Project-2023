@@ -156,8 +156,6 @@ class RTree:
             for entry in node.entries:
                 if entry.rec.overlaps(rec):
                     new_rec = entry.rec.intersects(rec)
-                    print("new")
-                    print(new_rec)
                     temp = self.search_tree(new_rec, entry.child)
                     #  den afhneis to rec idio vaseis ton yposynolo-tomh
                     if temp is not None:
