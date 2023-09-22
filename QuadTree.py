@@ -11,6 +11,7 @@ class Point:
 
     def __str__(self):
         return "x is " + str(self.x) + " y is " + str(self.y)
+
     def same_as(self, point: 'Point'):
         return self.x == point.x and self.y == point.y
 
@@ -19,6 +20,10 @@ class Rectangle:
     def __init__(self, low: Point, high: Point):
         self.low = low
         self.high = high
+
+    def __str__(self):
+        return " Xmin= " + str(self.low.x) + " Ymin= " \
+            + str(self.low.y) + " Xmax= " + str(self.high.x) + " Ymax= " + str(self.high.y)
 
     @property
     def width(self):
@@ -42,6 +47,43 @@ class Rectangle:
 
     def overlaps_point(self, point: Point):
         return self.low.x <= point.x <= self.high.x and self.low.y <= point.y <= self.high.y
+
+    def overlaps(self, rec: 'Rectangle'):
+        if self.same_as(rec):
+            return True
+
+        rec_xright = max(self.high.x, rec.low.x) == rec.low.x
+        if self.high.x == rec.low.x:
+            rec_xright = 0
+
+        rec_yright = max(self.high.y, rec.low.y) == rec.low.y
+        if self.high.y == rec.low.y:
+            rec_yright = 0
+
+        rec_xleft = min(self.low.x, rec.high.x) == rec.high.x
+        if self.low.x == rec.high.x:
+            rec_xleft = 0
+
+        rec_yleft = min(self.low.y, rec.high.y) == rec.high.y
+        if self.low.y == rec.high.y:
+            rec_yleft = 0
+
+        return not (rec_xright or rec_xleft or rec_yright or rec_yleft)
+
+    def same_as(self, rec: 'Rectangle'):
+        return self.low.x == rec.low.x and self.high.x == rec.high.x and self.low.y == rec.low.y \
+            and self.high.y == rec.high.y
+
+    def intersects(self, rec: 'Rectangle'):
+        xmin = max(self.low.x, rec.low.x)
+        ymin = max(self.low.y, rec.low.y)
+        xmax = min(self.high.x, rec.high.x)
+        ymax = min(self.high.y, rec.high.y)
+
+        min_point = Point(xmin, ymin)
+        max_point = Point(xmax, ymax)
+        new_rec = Rectangle(min_point, max_point)
+        return new_rec
 
 
 class Node:
@@ -143,7 +185,7 @@ class QuadTree:
         node.point = None
         return node
 
-    def search(self, node: Node, rec: Rectangle, point: Point):
+    def point_search(self, node: Node, rec: Rectangle, point: Point):
         x_axis = rec.center().x < point.x
         y_axis = rec.center().y > point.y
 
@@ -158,16 +200,26 @@ class QuadTree:
             return node.directions[index].point.data
         else:
 
-            return self.search(node.directions[index], node.directions[index].rec, point)
+            return self.point_search(node.directions[index], node.directions[index].rec, point)
 
-    def query(self, rec: Rectangle, point: Point):
-        a = []
-        for i in range(rec.low.x, rec.high.x+1):
-            for j in range(rec.low.y, rec.high.y+1):
-                a.append(self.search(self.root, Point(i, j)))
+    def range_search(self, node: Node, nrec: Rectangle, drec: Rectangle):
+        result = []
+        if node.is_root and node.isleaf():
+            return node.point.data
+        if node.isleaf():
+            print("mpainw")
+            if drec.overlaps_point(node.point):
+                return node.point.data
+        else:
+            for i in range(0, 4):
+                print(f"range is {i}")
+                print(node.directions[i].rec)
 
-
-
+                if node.directions[i].rec.overlaps(drec):
+                    if node.directions[i].point is None and node.directions[i].isleaf():
+                        continue
+                    result.extend(self.range_search(node.directions[i], node.directions[i].rec, drec))
+        return result
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
@@ -186,12 +238,16 @@ if __name__ == '__main__':
 
     for pd in range(len(df)):
         p = Point(ord(df[0][pd]),  df[1][pd], pd)
-        print(f"pd = {pd}")
         qt.insert(p)
 
-    print(qt.root.directions[1].directions[0].point.data)
-    fl = qt.search(qt.root, rect, Point(ord('a'), 2))
-    print(fl)
+    #print(qt.root.directions[1].directions[0].point.data)
+    #fl = qt.point_search(qt.root, qt.rec, Point(ord('a'), 1))
+    #print(fl)
+    print(f"it is what it is {qt.root.directions[1].rec}")
+    drec = Rectangle(Point(ord('a'), 1), Point(ord('c'), 3))
+    print(f"drec is {drec}")
+    rs = qt.range_search(qt.root, qt.rec, drec)
+    print(rs)
 
     # low_point = Point(65, 0)
     # high_point = Point(90, 12)
