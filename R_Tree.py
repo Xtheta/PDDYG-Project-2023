@@ -22,7 +22,7 @@ class Rectangle:
     @property
     def height(self):
         return self.high.y - self.low.y
-
+    @property
     def area(self):
         return self.width * self.height
 
@@ -114,10 +114,6 @@ class Entry:  # each entry has its mbr and a child pointer (to nodes) or a data 
         self.rec = rec
         self.data = data_p
         self.child = child_p
-
-    @property
-    def is_leaf(self):
-        return self.child is None
 
 
 class RTree:
