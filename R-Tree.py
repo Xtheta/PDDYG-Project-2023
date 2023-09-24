@@ -223,7 +223,7 @@ class RTree:
 def find_least_area(entries: List[Entry], rec: Rectangle):
     areas = [child.rec.area() for child in entries]  # list with rectangles for possible insert
     enlargements = [rec.changed_rectangle(child.rec).area() - areas[j] for j, child in enumerate(entries)]
-    # rectangle englargement for each possible rectangle
+    # rectangle enlargement for each possible rectangle
     min_enlargement = min(enlargements)
     instances = find_indices(enlargements, min_enlargement)  # position of min possible rects
     if len(instances) == 1:
