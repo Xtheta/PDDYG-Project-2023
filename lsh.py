@@ -71,7 +71,7 @@ def candidatePairs(totalBuckets):
 
     return pairSet
 
-def similarity(minPercentage, maxPercentage, pairSet, splitedSignatures, data):
+def similarity(minPercentage, maxPercentage, pairSet, splitedSignatures, data,bands):
     results = []
     for i in pairSet:
         text1 = i[0]
@@ -91,6 +91,10 @@ def similarity(minPercentage, maxPercentage, pairSet, splitedSignatures, data):
 
 
         percentage = round(((count/bands)*100),2)
+        if(percentage==100.00):
+            if(len(data[text1])==0 and len(data[text2])==0):
+                percentage = 0.00
+
         if(minPercentage<maxPercentage):
             if (percentage >= minPercentage and percentage<=maxPercentage):
                 # print(f"\n{text1}: {data[text1]}\n{text2}: {data[text2]}\nPERCENTAGE: ", percentage, "%")
@@ -103,7 +107,6 @@ def similarity(minPercentage, maxPercentage, pairSet, splitedSignatures, data):
 
     return results
 
-
 def splitSignature(signature, b):
     r = int(len(signature)/b)
     splits = []
@@ -115,7 +118,7 @@ def splitSignature(signature, b):
             splits.append([])
     return splits
 
-if __name__ == '__main__':
+def main(data):
     numName = input("Enter the number of file: ")
     fileResults = "results"+numName+".txt"
     kShingle = int(input("Enter the number of k-Shingle: "))
@@ -125,12 +128,12 @@ if __name__ == '__main__':
     maxPer = int(input("Enter maximum percentage of similarity: "))
 
 
-    data = []
-    with open('scientists.csv', 'r', encoding='utf-8') as csvfile:
-        csvreader = csv.reader(csvfile)
-        header = next(csvreader)
-        for row in csvreader:
-            data.append(row[2])
+    # data = []
+    # with open('scientists.csv', 'r', encoding='utf-8') as csvfile:
+    #     csvreader = csv.reader(csvfile)
+    #     header = next(csvreader)
+    #     for row in csvreader:
+    #         data.append(row[2])
 
     # data = ["haris einai","nikos einai","einai einai"]
 
@@ -162,13 +165,12 @@ if __name__ == '__main__':
         splitedSignatures.append(splitSignature(signature,bands))
 
 
-    totalbucketlist = []
     totalbucketlist = createBuckets(bands, len(data), splitedSignatures)
 
 
     pairSet = candidatePairs(totalbucketlist)
 
-    res = similarity(minPer,maxPer,pairSet,splitedSignatures,data)
+    res = similarity(minPer,maxPer,pairSet,splitedSignatures,data,bands)
 
     file = open(fileResults, 'w')
 
@@ -176,8 +178,11 @@ if __name__ == '__main__':
     file.write("Number of permutations: " + str(permutations) + "\n")
     file.write("Number of bands: " + str(bands) + "\n")
     file.write("Function for buckets: " + bucketsVar + "\n")
-    file.write("Minimum percentage: " + str(minPer) + "\n")
-    file.write("Maximum percentage: " + str(maxPer) + "\n\n\n")
+    file.write("Minimum percentage: " + str(minPer) + "%\n")
+    if(maxPer<minPer):
+        maxPer=100
+    file.write("Maximum percentage: " + str(maxPer) + "%\n\n\n")
+
     for row in res:
         for i in row:
             file.write(i + "\n")
