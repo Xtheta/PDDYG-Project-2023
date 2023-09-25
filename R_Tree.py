@@ -97,7 +97,7 @@ class Node:
 
     def is_root(self):
         return self.parent is None
-
+    @property
     def parent_entry(self) -> Optional['Entry']:
         if self.parent is not None:
             return next(entry for entry in self.parent.entries if entry.child is self)
@@ -113,10 +113,6 @@ class Entry:  # each entry has its mbr and a child pointer (to nodes) or a data 
         self.rec = rec
         self.data = data_p
         self.child = child_p
-
-    @property
-    def is_leaf(self):
-        return self.child is None
 
 
 class RTree:
@@ -193,7 +189,7 @@ class RTree:
             node.parent_entry.rec = union_all([entry.rec for entry in node.entries])
             # creates an MBR for all the entries of our node
             # MBR of a node is always at its parent
-            if split_node is not None:  # an egine splitting
+            if split_node is not None:
                 rec = union_all([e.rec for e in split_node.entries])
                 # creates an MBR for all the entries of our new node
                 entry = Entry(rec, child_p=split_node)
@@ -242,6 +238,7 @@ class RTree:
             if group2_underfull and not group1_underfull:
                 group2.extend(entries)
                 break
+            print("tr")
             # Find out which entry to insert next
             area1, area2 = rec1.area(), rec2.area()
             entry = _pick_next(entries, rec1, area1, rec2, area2)
