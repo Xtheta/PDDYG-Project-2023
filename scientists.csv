@@ -1,680 +1,681 @@
-'Atta ur Rehman Khan', 0, ['Mobile Cloud Computing', 'Cybersecurity', 'IoT']
-'Wil van der Aalst', 0, ['business process management', 'process mining', 'Petri nets']
-'Scott Aaronson', 4, ['quantum computing and complexity theory']
-'Rediet Abebe', 3, ['algorithms', 'artificial intelligence']
-'Hal Abelson', 1, ['intersection of computing and teaching']
-'Serge Abiteboul', 4, ['database theory']
-'Samson Abramsky', 4, ['game semantics']
-'Leonard Adleman', 1, ['RSA', 'DNA computing']
-'Manindra Agrawal', 8, ['polynomial-time primality testing']
-'Luis von Ahn', 3, ['human-based computation']
-'Alfred Aho', 7, ['compilers book', the 'a' in AWK]
-'Frances E. Allen', 6, ['compiler optimization']
-'Gene Amdahl', 2, ['supercomputer developer', 'Amdahl Corporation founder']
-'David P. Anderson', 2, ['volunteer computing']
-'Lisa Anthony', 0, ['natural user interfaces']
-'Andrew Appel', 0, ['compiler of text books']
-'Cecilia R. Aragon', 1, ['invented treap', 'human-centered data science']
-'Bruce Arden', 0, ['programming language compilers GAT', 'Michigan Algorithm Decoder MAD', 'virtual memory architecture', 'Michigan Terminal System MTS']
-'Angie Jones', 0, []
-'Sanjeev Arora', 0, ['PCP theorem']
-'Winifred Tim Alice Asprey', 0, ['established the computer science curriculum at Vassar College']
-'John Vincent Atanasoff', 1, ['computer pioneer', 'creator of Atanasoff Berry Computer ABC']
-'Shakuntala Atre', 0, ['database theory']
-'Charles Babbage', 1, ['invented first mechanical computer called the supreme mathematician']
-'Charles Bachman', 3, ['American computer scientist', 'known for Integrated Data Store']
-'Roland Carl Backhouse', 0, ['mathematics of computer program construction', 'algorithmic problem solving', 'ALGOL']
-'John Backus', 3, ['FORTRAN', 'Backus–Naur form', 'first complete compiler']
-'David F. Bacon', 1, ['programming languages', 'garbage collection']
-'David Bader', 5, []
-'Victor Bahl', 4, []
-'Anthony James Barr', 0, ['SAS System']
-'Jean Bartik', 1, ['one of the first computer programmers', 'on ENIAC 1946', 'one of the first Vacuum tube computers', 'back when programming involved using cables', 'dials', 'and switches to physically rewire the machine; worked with John Mauchly toward BINAC 1949', 'EDVAC 1949', 'UNIVAC 1951 to develop early stored program computers']
-'Andrew Barto', 1, []
-'Friedrich L. Bauer', 3, ['Stack data structure', 'Sequential Formula Translation', 'ALGOL', 'software engineering', 'Bauer–Fike theorem']
-'Rudolf Bayer', 2, ['B-tree']
-'Gordon Bell', 8, ['computer designer DEC VAX', 'author: Computer Structures']
-'Steven M. Bellovin', 0, ['network security']
-'Cecilia Berdichevsky', 0, []
-'Tim Berners-Lee', 5, ['World Wide Web']
-'Daniel J. Bernstein', 0, ['qmail', 'software as protected speech']
-'Peter Bernus', 0, []
-'Abhay Bhushan', 0, []
-'Dines Bjørner', 1, ['Vienna Development Method VDM', 'RAISE']
-'Gerrit Blaauw', 0, ['one of the principal designers of the IBM System 360 line of computers']
-'Sue Black', 1, []
-'David Blei', 2, []
-'Dorothy Blum', 0, ['National Security Agency']
-'Lenore Blum', 3, ['complexity']
-'Manuel Blum', 4, ['cryptography']
-'Barry Boehm', 0, ['software engineering economics', 'spiral development']
-'Corrado Böhm', 0, ['author of the structured program theorem']
-'Kurt Bollacker', 0, []
-'Jeff Bonwick', 0, ['invented slab allocation and ZFS']
-'Grady Booch', 2, ['Unified Modeling Language', 'Object Management Group']
-'George Boole', 0, ['Boolean logic']
-'Andrew Booth', 0, ['developed the first rotating drum storage device']
-'Kathleen Booth', 0, ['developed the first assembly language']
-'Anita Borg', 0, ['American computer scientist', 'founder of Anita Borg Institute for Women and Technology']
-'Bert Bos', 0, ['Cascading Style Sheets']
-'Mikhail Botvinnik', 0, ['World Chess Champion', 'computer scientist and electrical engineer', 'pioneered early expert system AI and computer chess']
-'Jonathan Bowen', 1, ['Z notation', 'formal methods']
-'Stephen R. Bourne', 3, ['Bourne shell', 'portable ALGOL 68C compiler']
-'Harry Bouwman', 0, ['Dutch Information systems researcher', 'and Professor at the Åbo Akademi University']
-'Robert S. Boyer', 0, ['string searching', 'ACL2 theorem prover']
-'Karlheinz Brandenburg', 1, ['Main mp3 contributor']
-'Gilles Brassard', 3, []
-'Lawrence M. Breed', 1, ['implementation of Iverson Notation APL', 'co-developed APL\\360', 'Scientific Time Sharing Corporation cofounder']
-'Jack E. Bresenham', 0, ['early computer-graphics contributions', including Bresenham's algorithm]
-'Sergey Brin', 0, ['co-founder of Google']
-'David J. Brown', 0, ['unified memory architecture', 'binary compatibility']
-'Per Brinch Hansen', 1, ['RC 4000 multiprogramming system', 'operating system kernels', 'microkernels', 'monitors', 'concurrent programming', 'Concurrent Pascal', 'distributed computing & processes', 'parallel computing']
-'Sjaak Brinkkemper', 0, ['methodology of product software development']
-'Fred Brooks', 5, ['System 360', 'OS/360', 'The Mythical Man-Month', 'No Silver Bullet']
-'Rod Brooks', 1, []
-'Margaret Burnett', 0, ['visual programming languages', 'end-user software engineering', 'and gender-inclusive software']
-'Michael Butler', 0, ['Event-B']
-'Pino Caballero Gil', 0, ['cryptography']
-'Tracy Camp', 2, ['wireless computing']
-'Martin Campbell-Kelly', 0, ['history of computing']
-'Rosemary Candlin', 0, []
-'Rod Canion', 0, []
-'Bryan Cantrill', 0, ['invented DTrace']
-'Luca Cardelli', 2, []
-'John Carmack', 0, ['codeveloped Doom']
-'Michael Caspersen', 7, []
-'Edwin Catmull', 4, ['computer graphics']
-'Vint Cerf', 12, ['Internet', 'TCP/IP']
-'Gregory Chaitin', 0, []
-'Robert Cailliau', 0, ['Belgian computer scientist']
-'Zhou Chaochen', 1, ['duration calculus']
-'Peter Chen', 7, ['entity-relationship model', 'data modeling', 'conceptual model']
-'Leonardo Chiariglione', 0, ['founder of MPEG']
-'Tracy Chou', 0, ['computer scientist and activist']
-'Alonzo Church', 0, ['mathematics of combinators', 'lambda calculus']
-'Alberto Ciaramella', 0, ['speech recognition', 'patent informatics']
-'Edmund M. Clarke', 1, ['model checking']
-'John Cocke', 6, ['RISC']
-'Edgar F. Codd', 1, ['formulated the database relational model']
-'Jacques Cohen', 0, ['computer science professor']
-'Ian Coldwater', 0, ['computer security']
-'Simon Colton', 0, ['computational creativity']
-'Alain Colmerauer', 0, ['Prolog']
-'Douglas Comer', 0, ['Xinu']
-'Paul Justin Compton', 0, ['Ripple Down Rules']
-'Richard W. Conway', 2, ['CORC', 'CUPL', 'and PL/C languages and dialects; programming textbooks']
-'Gordon Cormack', 0, ['co-invented dynamic Markov compression']
-'Stephen Cook', 8, ['NP-completeness']
-'James Cooley', 0, ['Fast Fourier transform FFT']
-'Danese Cooper', 0, ['open-source software']
-'Fernando J. Corbató', 2, ['Compatible Time-Sharing System CTSS', 'Multics']
-'Kit Cosper', 0, ['open-source software']
-'Patrick Cousot', 8, ['abstract interpretation']
-'Ingemar Cox', 4, ['digital watermarking']
-'Seymour Cray', 0, ['Cray Research', 'supercomputer']
-'Nello Cristianini', 1, ['machine learning', 'pattern analysis', 'artificial intelligence']
-'Jon Crowcroft', 2, ['networking']
-'W. Bruce Croft', 0, []
-'Glen Culler', 5, ['interactive computing', 'computer graphics', 'high performance computing']
-'Haskell Curry', 0, []
-'Luigi Dadda', 0, ['designer of the Dadda multiplier']
-'Ole-Johan Dahl', 2, ['Simula', 'object-oriented programming']
-'Ryan Dahl', 0, ['founder of node.js project']
-'Andries van Dam', 0, ['computer graphics', 'hypertext']
-'Samir Das', 0, ['Wireless Networks', 'Mobile Computing', 'Vehicular ad hoc network', 'Sensor Networks', 'Mesh networking', 'Wireless ad hoc network']
-'Neil Daswani', 0, ['computer security', 'co-founder and co-director of Stanford Advanced Computer Security Program', 'co-founder of Dasient acquired by Twitter', former chief information security of LifeLock and Symantec's Consumer Business Unit]
-'Christopher J. Date', 0, ['proponent of database relational model']
-'Terry A. Davis', 0, ['creator of TempleOS']
-'Jeff Dean', 0, ['Bigtable', 'MapReduce', 'Spanner of Google']
-'Erik Demaine', 3, ['computational origami']
-'Tom DeMarco', 1, []
-'Richard DeMillo', 0, ['computer security', 'software engineering', 'educational technology']
-'Dorothy E. Denning', 2, ['computer security']
-'Peter J. Denning', 2, [identified the use of an operating system's working set and balance set, 'President of ACM']
-'Michael Dertouzos', 0, ['Director of Massachusetts Institute of Technology MIT Laboratory for Computer Science LCS from 1974 to 2001']
-'Alexander Dewdney', 0, []
-'Robert Dewar', 0, ['IFIP WG 2.1 member', 'ALGOL 68', 'chairperson; AdaCore cofounder', 'president', 'CEO']
-'Vinod Dham', 0, ['P5 Pentium processor']
-'Jan Dietz', 0, ['information systems theory and Design & Engineering Methodology for Organizations']
-'Whitfield Diffie', 6, ['public key cryptography', 'Diffie Hellman key exchange']
-'Edsger W. Dijkstra', 5, ['algorithms', Dijkstra's algorithm, 'semaphore programming', 'IFIP WG 2.1 member']
-'Matthew Dillon', 0, ['DragonFly BSD with LWKT', 'vkernel OS-level virtualisation', 'file systems: HAMMER1', 'HAMMER2']
-'Alan Dix', 0, ['wrote important university level textbook on human–computer interaction']
-'Jack Dongarra', 15, ['linear algebra high performance computing HCI']
-'Marco Dorigo', 0, ['ant colony optimization']
-'Paul Dourish', 0, ['human computer interaction']
-'Charles Stark Draper', 6, ['designer of Apollo Guidance Computer', 'father of inertial navigation', 'MIT professor']
-'Susan Dumais', 1, ['information retrieval']
-'Adam Dunkels', 0, ['Contiki', 'lwIP', 'uIP', 'protothreads']
-'Jon Michael Dunn', 11, ['founding dean of Indiana University School of Informatics', 'information based logics especially relevance logic']
-'Schahram Dustdar', 0, ['Distributed Systems', 'TU Wien', 'Austria']
-'Peter Eades', 0, ['graph drawing']
-'Annie Easley', 0, []
-'Wim Ebbinkhuijsen', 0, ['COBOL']
-'John Presper Eckert', 4, ['ENIAC']
-'Alan Edelman', 7, [Edelman's Law, 'stochastic operator', 'Interactive Supercomputing', 'Julia programming language cocreator', 'high performance computing', 'numerical computing']
-'Brendan Eich', 0, ['JavaScript', 'Mozilla']
-'Philip Emeagwali', 0, ['supercomputing']
-'E. Allen Emerson', 2, ['model checking']
-'Douglas Engelbart', 7, ['tiled windows', 'hypertext', 'computer mouse']
-'Barbara Engelhardt', 1, ['latent variable models', 'genomics', 'quantitative trait locus QTL']
-'David Eppstein', 0, []
-'Andrey Ershov', 0, ['languages ALPHA', 'Rapira; first Soviet time-sharing system AIST-0', 'electronic publishing system RUBIN', 'multiprocessing workstation MRAMOR', 'IFIP WG 2.1 member', 'Aesthetics and the Human Factor in Programming']
-'Don Estridge', 0, ['led development of original IBM Personal Computer PC; known as father of the IBM PC']
-'Oren Etzioni', 1, ['MetaCrawler', 'Netbot']
-'Christopher Riche Evans', 0, []
-'David C. Evans', 1, ['computer graphics']
-'Shimon Even', 0, []
-'Scott Fahlman', 1, []
-'Edward Feigenbaum', 4, ['intelligence']
-'Edward Felten', 1, ['computer security']
-'Tim Finin', 1, []
-'Raphael Finkel', 0, []
-'Donald Firesmith', 0, []
-'Gary William Flake', 0, []
-'Tommy Flowers', 0, ['Colossus computer']
-'Robert Floyd', 2, ['NP-completeness']
-'Sally Floyd', 1, ['Internet congestion control']
-'Lawrence J. Fogel', 0, ['evolutionary programming']
-'James D. Foley', 1, []
-'Ken Forbus', 0, []
-'L. R. Ford', 0, []
-'Lance Fortnow', 1, []
-'Mahmoud Samir Fayed', 0, ['PWCT', 'Ring']
-'Martin Fowler', 0, []
-'Robert France', 1, []
-'Herbert W. Franke', 0, []
-'Edward Fredkin', 1, []
-'Yoav Freund', 1, []
-'Daniel P. Friedman', 0, []
-'Charlotte Froese Fischer', 8, ['computational theoretical physics']
-'Ping Fu', 0, []
-'Xiaoming Fu', 0, []
-'Kunihiko Fukushima', 1, ['neocognitron', 'artificial neural networks', 'convolutional neural network architecture', 'unsupervised learning', 'deep learning']
-'D. R. Fulkerson', 1, []
-'Richard P. Gabriel', 2, ['Maclisp', 'Common Lisp', 'Worse is Better', 'League for Programming Freedom', 'Lucid Inc.', 'XEmacs']
-'Zvi Galil', 3, []
-'Bernard Galler', 0, ['MAD programming language']
-'Hector Garcia-Molina', 1, []
-'Michael Garey', 0, ['NP-completeness']
-'Hugo de Garis', 0, []
-'Bill Gates', 4, ['cofounder of Microsoft']
-'David Gelernter', 1, []
-'Lisa Gelobter', 0, ['was the Chief Digital Service Officer for the U.S. Department of Education', 'founder of teQuitable']
-'Charles Geschke', 3, []
-'Zoubin Ghahramani', 1, []
-'Sanjay Ghemawat', 1, []
-'Jeremy Gibbons', 0, ['generic programming', 'functional programming', 'formal methods', 'computational biology', 'bioinformatics']
-'Juan E. Gilbert', 1, ['human-centered computing']
-'Lee Giles', 7, ['CiteSeer']
-'Seymour Ginsburg', 0, ['formal languages', 'automata theory', 'AFL theory', 'database theory']
-'Robert L. Glass', 0, []
-'Kurt Gödel', 3, ['computability; not a computer scientist per se', 'but his work was invaluable in the field']
-'Ashok Goel', 1, []
-'Joseph Goguen', 0, []
-'Hardik Gohel', 0, []
-'E. Mark Gold', 0, ['Language identification in the limit']
-'Adele Goldberg', 0, ['Smalltalk']
-'Andrew V. Goldberg', 1, ['algorithms', 'algorithm engineering']
-'Ian Goldberg', 0, ['cryptographer', 'off-the-record messaging']
-'Judy Goldsmith', 0, []
-'Oded Goldreich', 1, ['cryptography', 'computational complexity theory']
-'Shafi Goldwasser', 11, ['cryptography', 'computational complexity theory']
-'Gene Golub', 0, ['Matrix computation']
-'Martin Charles Golumbic', 0, ['algorithmic graph theory']
-'Gastón Gonnet', 0, ['cofounder of Waterloo Maple Inc.']
-'Ian Goodfellow', 0, ['machine learning']
-'James Gosling', 1, ['Network extensible Window System NeWS', 'Java']
-'Paul Graham', 0, ['Viaweb', 'On Lisp', 'Arc']
-'Robert M. Graham', 0, ['programming language compilers GAT', 'Michigan Algorithm Decoder MAD', 'virtual memory architecture', 'Multics']
-'Susan L. Graham', 5, ['compilers', 'programming environments']
-'Jim Gray', 2, ['database']
-'Sheila Greibach', 0, ['Greibach normal form', 'Abstract family of languages AFL theory']
-'David Gries', 4, ['The Science of Programming', 'Interference freedom', 'Member Emeritus', 'IFIP WG 2.3 on Programming Methodology']
-'Ralph Griswold', 0, ['SNOBOL']
-'Bill Gropp', 2, ['Message Passing Interface', 'Portable', 'Extensible Toolkit for Scientific Computation PETSc']
-'Tom Gruber', 0, ['ontology engineering']
-'Shelia Guberman', 0, ['handwriting recognition']
-'Ramanathan V. Guha', 0, ['Resource Description Framework RDF', 'Netscape', 'RSS', 'Epinions']
-'Neil J. Gunther', 0, ['computer performance analysis', 'capacity planning']
-'Jürg Gutknecht', 0, ['with Niklaus Wirth: Lilith computer; Modula-2', 'Oberon', 'Zonnon programming languages; Oberon operating system']
-'Michael Guy', 0, ['Phoenix', 'work on number theory', 'computer algebra', 'higher dimension polyhedra theory; with John Horton Conway']
-'Robert Griesemer', 0, ['Go language']
-'Nico Habermann', 0, ['work on operating systems', 'software engineering', 'inter-process communication', 'process synchronization', 'deadlock avoidance', 'software verification', 'programming languages: ALGOL 60', 'BLISS', 'Pascal', 'Ada']
-'Philipp Matthäus Hahn', 0, ['mechanical calculator']
-'Eldon C. Hall', 0, ['Apollo Guidance Computer']
-'Wendy Hall', 1, []
-'Joseph Halpern', 3, []
-'Margaret Hamilton', 1, ['ultra-reliable software design']
-'Richard Hamming', 4, ['Hamming code', 'founder of the Association for Computing Machinery']
-'Jiawei Han', 0, ['data mining']
-'Frank Harary', 0, ['graph theory']
-'Juris Hartmanis', 1, ['computational complexity theory']
-'Johan Håstad', 4, ['computational complexity theory']
-'Les Hatton', 1, ['software failure and vulnerabilities']
-'Igor Hawryszkiewycz', 0, ['American computer scientist and organizational theorist']
-'He Jifeng', 0, ['provably correct systems']
-'Eric Hehner', 0, ['predicative programming', 'formal methods', 'quote notation', 'ALGOL']
-'Martin Hellman', 9, ['encryption']
-'Gernot Heiser', 6, ['operating system teaching', 'research', 'commercialising', 'Open Kernel Labs', 'OKL4', 'Wombat']
-'James Hendler', 0, ['Semantic Web']
-'John L. Hennessy', 9, ['computer architecture']
-'Andrew Herbert', 0, []
-'Carl Hewitt', 0, []
-'Kelsey Hightower', 0, ['open source', 'cloud computing']
-'Danny Hillis', 2, ['Connection Machine']
-'Geoffrey Hinton', 9, []
-'Julia Hirschberg', 10, []
-'Tin Kam Ho', 0, ['artificial intelligence', 'machine learning']
-'C. A. R. Hoare', 6, ['logic', 'rigor', 'communicating sequential processes CSP']
-'Louis Hodes', 0, ['Lisp', 'pattern recognition', 'logic programming', 'cancer research']
-'Betty Holberton', 4, ['ENIAC programmer', 'developed the first Sort Merge Generator']
-'John Henry Holland', 3, ['genetic algorithms']
-'Herman Hollerith', 3, ['invented recording of data on a machine readable medium', 'using punched cards']
-'Gerard Holzmann', 1, ['software verification', 'logic model checking SPIN']
-'John Hopcroft', 8, ['compilers']
-'Grace Hopper', 9, ['developed early compilers: FLOW-Matic', 'COBOL; worked on UNIVAC; gave speeches on computer history', 'where she gave out nano-seconds']
-'Eric Horvitz', 0, ['artificial intelligence']
-'Alston Householder', 0, []
-'Paul Hudak', 6, ['Haskell language design', 'textbooks on it and computer music']
-'David A. Huffman', 1, ['Huffman coding', 'used in data compression']
-'John Hughes', 0, ['structuring computations with arrows; QuickCheck randomized program testing framework; Haskell language design']
-'Roger Hui', 1, ['co-created J language']
-'Watts Humphrey', 1, ['Personal Software Process PSP', 'Software quality', 'Team Software Process TSP']
-'Sandra Hutchins', 0, []
-'Jean Ichbiah', 0, ['Ada']
-'Roberto Ierusalimschy', 0, ['Lua programming language']
-'Dan Ingalls', 2, ['Smalltalk', 'BitBlt', 'Lively Kernel']
-'Mary Jane Irwin', 3, []
-'Kenneth E. Iverson', 4, ['APL', 'J']
-'Ivar Jacobson', 0, ['Unified Modeling Language', 'Object Management Group']
-'Anil K. Jain', 10, []
-'Ramesh Jain', 0, []
-'Jonathan James', 0, []
-'David S. Johnson', 2, []
-'Stephen C. Johnson', 0, []
-'Cliff Jones', 0, ['Vienna Development Method VDM']
-'Michael I. Jordan', 5, []
-'Mathai Joseph', 1, []
-'Aravind K. Joshi', 0, []
-'Bill Joy', 4, ['Sun Microsystems', 'BSD UNIX', 'vi', 'csh']
-'Dan Jurafsky', 2, ['natural language processing']
-'William Kahan', 4, ['numerical analysis']
-'Robert E. Kahn', 12, ['TCP/IP']
-'Avinash Kak', 0, ['digital image processing']
-'Poul-Henning Kamp', 0, ['invented GBDE', 'FreeBSD Jails', 'Varnish cache']
-'David Karger', 1, []
-'Richard Karp', 10, ['NP-completeness']
-'Narendra Karmarkar', 0, [Karmarkar's algorithm]
-'Marek Karpinski', 0, ['NP optimization problems']
-'Ted Kaehler', 0, ['Smalltalk', 'Squeak', 'HyperCard']
-'Alan Kay', 3, ['Dynabook', 'Smalltalk', 'overlapping windows']
-'Neeraj Kayal', 0, ['AKS primality test']
-'Manolis Kellis', 3, ['computational biology']
-'John George Kemeny', 1, ['the language BASIC']
-'Ken Kennedy', 0, ['compiling for parallel and vector machines']
-'Brian Kernighan', 0, ['Unix', the 'k' in AWK]
-'Carl Kesselman', 0, ['grid computing']
-'Gregor Kiczales', 0, ['CLOS', 'reflection', 'aspect-oriented programming']
-'Peter T. Kirstein', 3, ['Internet']
-'Stephen Cole Kleene', 2, ['Kleene closure', 'recursion theory']
-'Dan Klein', 4, ['Natural language processing', 'Machine translation']
-'Leonard Kleinrock', 5, ['ARPANET', 'queueing theory', 'packet switching', 'hierarchical routing']
-'Donald Knuth', 13, ['The Art of Computer Programming', 'MIX/MMIX', 'TeX', 'literate programming']
-'Andrew Koenig', 0, ['C++']
-'Daphne Koller', 5, ['Artificial intelligence', 'bayesian network']
-'Michael Kölling', 3, ['BlueJ']
-'Andrey Nikolaevich Kolmogorov', 7, ['algorithmic complexity theory']
-'Janet L. Kolodner', 1, ['case-based reasoning']
-'David Korn', 0, ['KornShell']
-'Kees Koster', 0, ['ALGOL 68']
-'Robert Kowalski', 1, ['logic programming']
-'John Koza', 0, ['genetic programming']
-'John Krogstie', 0, ['SEQUAL framework']
-'Joseph Kruskal', 0, [Kruskal's algorithm]
-'Maarja Kruusmaa', 0, ['underwater roboticist']
-'Thomas E. Kurtz', 2, ['BASIC programming language; Dartmouth College computer professor']
-'Richard E. Ladner', 5, []
-'Monica S. Lam', 0, []
-'Leslie Lamport', 6, ['algorithms for distributed computing', 'LaTeX']
-'Butler Lampson', 6, ['SDS 940', 'founding member Xerox PARC', 'Xerox Alto', 'Turing Award']
-'Peter Landin', 0, ['ISWIM', 'J operator', 'SECD machine', 'off-side rule', 'syntactic sugar', 'ALGOL', 'IFIP WG 2.1 member', 'advanced lambda calculus to model programming languages aided functional programming', 'denotational semantics']
-'Tom Lane', 0, ['Independent JPEG Group', 'PostgreSQL', 'Portable Network Graphics PNG']
-'Börje Langefors', 0, []
-'Chris Lattner', 2, ['creator of Swift programming language and LLVM compiler infrastructure']
-'Steve Lawrence', 0, []
-'Edward D. Lazowska', 0, []
-'Joshua Lederberg', 3, []
-'Manny M Lehman', 2, []
-'Charles E. Leiserson', 0, ['cache-oblivious algorithms', 'provably good work-stealing', 'coauthor of Introduction to Algorithms']
-'Douglas Lenat', 1, ['artificial intelligence', 'Cyc']
-'Yann LeCun', 3, []
-'Rasmus Lerdorf', 0, ['PHP']
-'Max Levchin', 0, ['Gausebeck–Levchin test and PayPal']
-'Leonid Levin', 1, ['computational complexity theory']
-'Kevin Leyton-Brown', 1, ['artificial intelligence']
-'J.C.R. Licklider', 0, []
-'David Liddle', 0, []
-'Jochen Liedtke', 0, ['microkernel operating systems Eumel', 'L3', 'L4']
-'John Lions', 0, [Lions' Commentary on UNIX 6th Edition, 'with Source Code Lions Book']
-'Charles H. Lindsey', 0, ['IFIP WG 2.1 member', 'Revised Report on ALGOL 68']
-'Richard J. Lipton', 1, ['computational complexity theory']
-'Barbara Liskov', 3, ['programming languages']
-'Yanhong Annie Liu', 0, ['programming languages', 'algorithms', 'program design', 'program optimization', 'software systems', 'optimizing', 'analysis', 'and transformations', 'intelligent systems', 'distributed computing', 'computer security', 'IFIP WG 2.1 member']
-'Darrell Long', 2, ['computer data storage', 'computer security']
-'Patricia D. Lopez', 1, ['broadening participation in computing']
-'Gillian Lovegrove', 0, []
-'Ada Lovelace', 0, ['first programmer']
-'David Luckham', 0, ['Lisp', 'Automated theorem proving', 'Stanford Pascal Verifier', 'Complex event processing', 'Rational Software cofounder Ada compiler']
-'Eugene Luks', 0, []
-'Nancy Lynch', 7, []
-'Nadia Magnenat Thalmann', 2, ['computer graphics', 'virtual actor']
-'Tom Maibaum', 1, []
-'Simon Marlow', 1, ['Haskell developer', 'book author; co-developer: Glasgow Haskell Compiler', 'Haxl remote data access library']
-'Zohar Manna', 4, ['fuzzy logic']
-'James Martin', 1, ['information engineering']
-'Robert C. Martin', 0, ['software craftsmanship']
-'John Mashey', 0, []
-'Yuri Matiyasevich', 3, [solving Hilbert's tenth problem]
-'Yukihiro Matsumoto', 0, ['Ruby programming language']
-'John Mauchly', 3, ['designed ENIAC', 'first general-purpose electronic digital computer', 'as well as EDVAC', 'BINAC and UNIVAC I', 'the first commercial computer; worked with Jean Bartik on ENIAC and Grace Murray Hopper on UNIVAC']
-'Ujjwal Maulik', 0, []
-'Derek McAuley', 1, ['ubiquitous computing', 'computer architecture', 'networking']
-'John McCarthy', 6, ['Lisp programming language', 'ALGOL', 'IFIP WG 2.1 member', 'artificial intelligence']
-'Andrew McCallum', 1, []
-'Douglas McIlroy', 0, ['macros', 'pipes', 'Unix philosophy']
-'Chris McKinstry', 0, ['artificial intelligence', 'Mindpixel']
-'Marshall Kirk McKusick', 0, ['BSD', 'Berkeley Fast File System']
-'Lambert Meertens', 2, ['ALGOL 68', 'IFIP WG 2.1 member', 'ABC programming language']
-'Kurt Mehlhorn', 4, ['algorithms', 'data structures', 'LEDA']
-'Dora Metcalf', 0, ['entrepreneur', 'engineer and mathematician']
-'Bertrand Meyer', 0, ['Eiffel programming language']
-'Silvio Micali', 3, ['cryptography']
-'Robin Milner', 5, ['ML programming language']
-'Jack Minker', 2, ['database logic']
-'Marvin Minsky', 6, ['artificial intelligence', 'perceptrons', 'Society of Mind']
-'James G. Mitchell', 1, ['WATFOR compiler', 'Mesa programming language', 'Spring operating system', 'ARM architecture']
-'Tom M. Mitchell', 1, []
-'Arvind Mithal', 0, ['formal verification of large digital systems', 'developing dynamic dataflow architectures', 'parallel computing programming languages Id', 'pH', 'compiling on parallel machines']
-'Paul Mockapetris', 4, ['Domain Name System DNS']
-'Cleve Moler', 2, ['numerical analysis', 'MATLAB']
-'Faron Moller', 0, ['concurrency theory']
-'John P. Moon', 0, ['inventor', 'Apple Inc.']
-'Charles H. Moore', 0, ['Forth language']
-'Edward F. Moore', 0, ['Moore machine']
-'Gordon Moore', 9, [Moore's law]
-'J Strother Moore', 0, ['string searching', 'ACL2 theorem prover']
-'Roger Moore', 4, ['co-developed APL\\360', 'created IPSANET', 'co-founded I. P. Sharp Associates']
-'Hans Moravec', 0, ['robotics']
-'Carroll Morgan', 0, ['formal methods']
-'Robert Tappan Morris', 0, ['Morris worm']
-'Joel Moses', 0, ['Macsyma']
-'Rajeev Motwani', 1, ['randomized algorithm']
-'Oleg A. Mukhanov', 0, ['quantum computing developer', 'co-founder and CTO of SeeQC']
-'Stephen Muggleton', 4, ['Inductive Logic Programming']
-'Klaus-Robert Müller', 1, ['machine learning', 'artificial intelligence']
-'Alan Mycroft', 0, ['programming languages']
-'Brad A. Myers', 1, ['human-computer interaction']
-'Mihai Nadin', 0, ['anticipation research']
-'Makoto Nagao', 1, ['machine translation', 'natural language processing', 'digital library']
-'Frieder Nake', 0, ['pioneered computer arts']
-'Bonnie Nardi', 0, ['human–computer interaction']
-'Peter Naur', 2, ['Backus–Naur form BNF', 'ALGOL 60', 'IFIP WG 2.1 member']
-'Roger Needham', 1, ['computer security']
-'James G. Nell', 0, ['Generalised Enterprise Reference Architecture and Methodology GERAM']
-'Greg Nelson', 1, ['satisfiability modulo theories', 'extended static checking', 'program verification', 'Modula-3 committee', 'Simplify theorem prover in ESC/Java']
-'Bernard de Neumann', 0, ['massively parallel autonomous cellular processor', 'software engineering research']
-'Klara Dan von Neumann', 0, ['early computers', 'ENIAC programmer and control designer']
-'John von Neumann', 6, ['early computers', 'von Neumann machine', 'set theory', 'functional analysis', 'mathematics pioneer', 'linear programming', 'quantum mechanics']
-'Allen Newell', 5, ['artificial intelligence', 'Computer Structures']
-'Max Newman', 3, ['Colossus computer', 'MADM']
-'Andrew Ng', 8, ['artificial intelligence', 'machine learning', 'robotics']
-'Nils John Nilsson', 0, ['artificial intelligence']
-'G.M. Nijssen', 0, [Nijssen's Information Analysis Methodology NIAM object-role modeling]
-'Tobias Nipkow', 0, ['proof assistance']
-'Maurice Nivat', 7, ['theoretical computer science', 'Theoretical Computer Science journal', 'ALGOL', 'IFIP WG 2.1 member']
-'Phiwa Nkambule', 3, ['Fintech', 'artificial intelligence', 'machine learning', 'robotics']
-'Jerre Noe', 0, ['computerized banking']
-'Peter Nordin', 0, ['artificial intelligence', 'genetic programming', 'evolutionary robotics']
-'Donald Norman', 0, ['user interfaces', 'usability']
-'Peter Norvig', 2, ['artificial intelligence', 'Director of Research at Google']
-'George Novacky', 0, ['University of Pittsburgh: assistant department chair', 'senior lecturer in computer science', 'assistant dean of CAS for undergraduate studies']
-'Kristen Nygaard', 4, ['Simula', 'object-oriented programming']
-'Martin Odersky', 0, ['Scala programming language']
-'Peter O'Hearn', 9, ['separation logic', 'bunched logic', 'Infer Static Analyzer']
-'T. William Olle', 0, ['Ferranti Mercury']
-'Steve Omohundro', 0, []
-'Severo Ornstein', 0, []
-'John O'Sullivan', 2, ['Wi-Fi']
-'John Ousterhout', 2, ['Tcl programming language']
-'Mark Overmars', 0, ['video game programming']
-'Susan Owicki', 0, ['interference freedom']
-'Larry Page', 0, ['co-founder of Google']
-'Sankar Pal', 1, []
-'Paritosh Pandya', 1, []
-'Christos Papadimitriou', 5, []
-'David Park', 0, ['first Lisp implementation', 'expert in fairness', 'program schemas', 'bisimulation in concurrent computing']
-'David Parnas', 0, ['information hiding', 'modular programming']
-'DJ Patil', 0, ['former Chief Data Scientist of United States']
-'Yale Patt', 0, ['Instruction-level parallelism', 'speculative architectures']
-'David Patterson', 6, ['reduced instruction set computer RISC', 'RISC-V', 'redundant arrays of inexpensive disks RAID', 'Berkeley Network of Workstations NOW']
-'Mike Paterson', 2, ['algorithms', 'analysis of algorithms complexity']
-'Mihai Pătraşcu', 0, ['data structures']
-'Lawrence Paulson', 1, ['ML']
-'Randy Pausch', 5, ['human–computer interaction', 'Carnegie professor', 'Last Lecture']
-'Juan Pavón', 0, ['software agents']
-'Judea Pearl', 5, ['artificial intelligence', 'search algorithms']
-'Alan Perlis', 2, ['Programming Pearls']
-'Radia Perlman', 0, ['spanning tree protocol']
-'Pier Giorgio Perotto', 0, ['computer designer at Olivetti', 'designer of the Programma 101 programmable calculator']
-'Rózsa Péter', 0, ['recursive function theory']
-'Simon Peyton Jones', 1, ['functional programming', 'Glasgow Haskell Compiler', 'C--']
-'Kathy Pham', 0, ['data', 'artificial intelligence', 'civic technology', 'healthcare', 'ethics']
-'Roberto Pieraccini', 0, ['speech technologist', 'engineering director at Google']
-'Gordon Plotkin', 3, []
-'Amir Pnueli', 2, ['temporal logic']
-'Willem van der Poel', 1, ['computer graphics', 'robotics', 'geographic information systems', 'imaging', 'multimedia', 'virtual environments', 'games']
-'Cicely Popplewell', 0, ['British software engineer in 1960s']
-'Emil Post', 0, ['mathematics']
-'Jon Postel', 1, ['Internet']
-'Franco Preparata', 2, ['computer engineering', 'computational geometry', 'parallel algorithms', 'computational biology']
-'William H. Press', 0, ['numerical algorithms']
-'Rapelang Rabana', 0, []
-'Grzegorz Rozenberg', 0, ['natural computing', 'automata theory', 'graph transformations and concurrent systems']
-'Michael O. Rabin', 10, ['nondeterministic machine']
-'Dragomir R. Radev', 0, ['natural language processing', 'information retrieval']
-'T. V. Raman', 1, ['accessibility', 'Emacspeak']
-'Brian Randell', 0, ['ALGOL 60', 'software fault tolerance', 'dependability', 'pre-1950 history of computing hardware']
-'Anders P. Ravn', 2, ['Duration Calculus']
-'Raj Reddy', 6, ['artificial intelligence']
-'David P. Reed', 0, []
-'Trygve Reenskaug', 0, ['model–view–controller MVC software architecture pattern']
-'John C. Reynolds', 1, ['continuations', 'definitional interpreters', 'defunctionalization', 'Forsythe', 'Gedanken language', 'intersection types', 'polymorphic lambda calculus', 'relational parametricity', 'separation logic', 'ALGOL']
-'Joyce K. Reynolds', 0, ['Internet']
-'Reinder van de Riet', 0, ['Editor: Europe of Data and Knowledge Engineering', 'COLOR-X event modeling language']
-'Bernard Richards', 0, ['medical informatics']
-'Martin Richards', 1, ['BCPL']
-'Adam Riese', 0, []
-'C. J. van Rijsbergen', 0, []
-'Dennis Ritchie', 8, ['C programming language', 'Unix']
-'Ron Rivest', 5, ['RSA', 'MD5', 'RC4']
-'Ken Robinson', 1, ['formal methods']
-'Colette Rolland', 0, ['REMORA methodology', 'meta modelling']
-'John Romero', 0, ['codeveloped Doom']
-'Azriel Rosenfeld', 3, []
-'Douglas T. Ross', 3, ['Automatically Programmed Tools APT', 'Computer-aided design', 'structured analysis and design technique', 'ALGOL X']
-'Guido van Rossum', 1, ['Python programming language']
-'M. A. Rothman', 0, ['UEFI']
-'Winston W. Royce', 0, ['waterfall model']
-'Rudy Rucker', 0, ['mathematician', 'writer', 'educator']
-'Steven Rudich', 1, ['complexity theory', 'cryptography']
-'Jeff Rulifson', 0, []
-'James Rumbaugh', 0, ['Unified Modeling Language', 'Object Management Group']
-'Peter Ružička', 0, ['Slovak computer scientist and mathematician']
-'George Sadowsky', 0, []
-'Mehrnoosh Sadrzadeh', 0, []
-'Umar Saif', 0, []
-'Gerard Salton', 0, ['information retrieval']
-'Jean E. Sammet', 3, ['programming languages']
-'Claude Sammut', 0, ['artificial intelligence researcher']
-'Carl Sassenrath', 0, ['operating systems', 'programming languages', 'Amiga', 'REBOL']
-'Mahadev Satyanarayanan', 5, ['file systems', 'distributed systems', 'mobile computing', 'pervasive computing']
-'Walter Savitch', 0, ['discovery of complexity class NL', Savitch's theorem, 'natural language processing', 'mathematical linguistics']
-'Jonathan Schaeffer', 2, []
-'Wilhelm Schickard', 0, ['one of the first calculating machines']
-'Jürgen Schmidhuber', 0, ['artificial intelligence', 'deep learning', 'artificial neural networks', 'recurrent neural networks', 'Gödel machine', 'artificial curiosity', 'meta-learning']
-'Steve Schneider', 0, ['formal methods', 'security']
-'Bruce Schneier', 0, ['cryptography', 'security']
-'Fred B. Schneider', 5, ['concurrent and distributed computing']
-'Sarita Schoenebeck', 0, ['human–computer interaction']
-'Glenda Schroeder', 0, ['command-line shell', 'e-mail']
-'Bernhard Schölkopf', 10, ['machine learning', 'artificial intelligence']
-'Dana Scott', 6, ['domain theory']
-'Michael L. Scott', 0, ['programming languages', 'algorithms', 'distributed computing']
-'Robert Sedgewick', 1, ['algorithms', 'data structures']
-'Ravi Sethi', 0, ['compilers', '2nd Dragon Book']
-'Nigel Shadbolt', 1, []
-'Adi Shamir', 6, ['RSA', 'cryptanalysis']
-'Claude Shannon', 10, ['information theory']
-'David E. Shaw', 0, ['computational finance', 'computational biochemistry', 'parallel architectures']
-'Cliff Shaw', 0, ['systems programmer', 'artificial intelligence']
-'Scott Shenker', 5, ['networking']
-'Shashi Shekhar', 0, []
-'Ben Shneiderman', 1, ['human–computer interaction', 'information visualization']
-'Edward H. Shortliffe', 0, ['MYCIN medical diagnostic expert system']
-'Daniel Siewiorek', 4, ['electronic design automation', 'reliability computing', 'context aware mobile computing', 'wearable computing', 'computer-aided design', 'rapid prototyping', 'fault tolerance']
-'Joseph Sifakis', 1, ['model checking']
-'Herbert A. Simon', 10, ['artificial intelligence']
-'Munindar P. Singh', 5, ['multiagent systems', 'software engineering', 'artificial intelligence', 'social networks']
-'Ramesh Sitaraman', 0, [helped build Akamai's high performance network]
-'Daniel Sleator', 1, ['splay tree', 'amortized analysis']
-'Aaron Sloman', 0, ['artificial intelligence and cognitive science']
-'Arne Sølvberg', 0, ['information modelling']
-'Brian Cantwell Smith', 0, ['reflection computer science', '3lisp']
-'David Canfield Smith', 1, ['invented interface icons', 'programming by demonstration', 'developed graphical user interface', 'Xerox Star; Xerox PARC researcher', 'cofounded Dest Systems', 'Cognition']
-'Steven Spewak', 0, ['enterprise architecture planning']
-'Carol Spradling', 0, []
-'Robert Sproull', 0, []
-'Rohini Kesavan Srihari', 0, ['information retrieval', 'text analytics', 'multilingual text mining']
-'Sargur Srihari', 3, ['pattern recognition', 'machine learning', 'computational criminology', 'CEDAR-FOX']
-'Maciej Stachowiak', 0, ['GNOME', 'Safari', 'WebKit']
-'Richard Stallman', 5, ['GNU Project']
-'Ronald Stamper', 0, []
-'Richard E. Stearns', 2, ['computational complexity theory']
-'Guy L. Steele', 2, ['Scheme', 'Common Lisp']
-'Thomas Sterling', 6, ['creator of Beowulf clusters']
-'Alexander Stepanov', 0, ['generic programming']
-'W. Richard Stevens', 0, ['author of books', 'including TCP/IP Illustrated and Advanced Programming in the Unix Environment']
-'Larry Stockmeyer', 0, ['computational complexity', 'distributed computing']
-'Salvatore Stolfo', 0, ['computer security', 'machine learning']
-'Michael Stonebraker', 2, ['relational database practice and theory']
-'Olaf Storaasli', 0, ['finite element machine', 'linear algebra', 'high performance computing']
-'Christopher Strachey', 0, ['denotational semantics']
-'Volker Strassen', 0, ['matrix multiplication', 'integer multiplication', 'Solovay–Strassen primality test']
-'Bjarne Stroustrup', 11, ['C++']
-'Madhu Sudan', 3, ['computational complexity theory', 'coding theory']
-'Gerald Jay Sussman', 2, ['Scheme']
-'Bert Sutherland', 1, ['graphics', 'Internet']
-'Ivan Sutherland', 8, ['graphics']
-'Latanya Sweeney', 0, ['Data privacy and algorithmic fairness']
-'Mario Szegedy', 1, ['complexity theory', 'quantum computing']
-'Parisa Tabriz', 0, ['Google Director of Engineering', 'also known as the Security Princess']
-'Roberto Tamassia', 0, ['computational geometry', 'computer security']
-'Andrew S. Tanenbaum', 0, ['operating systems', 'MINIX']
-'Austin Tate', 1, ['Artificial Intelligence Applications', 'AI Planning', 'Virtual Worlds']
-'Bernhard Thalheim', 1, ['conceptual modelling foundation']
-'Eva Tardos', 5, []
-'Gábor Tardos', 4, []
-'Robert Tarjan', 3, ['splay tree']
-'Valerie Taylor', 5, []
-'Mario Tchou', 0, ['Italian engineer', 'of Chinese descent', 'leader of Olivetti Elea project']
-'Jaime Teevan', 3, []
-'Shang-Hua Teng', 1, ['analysis of algorithms']
-'Larry Tesler', 0, ['human–computer interaction', 'graphical user interface', 'Apple Macintosh']
-'Avie Tevanian', 0, ['Mach kernel team', 'NeXT', 'Mac OS X']
-'Charles P. Thacker', 3, ['Xerox Alto', 'Microsoft Research']
-'Daniel Thalmann', 4, ['computer graphics', 'virtual actor']
-'Ken Thompson', 9, ['Unix']
-'Sebastian Thrun', 3, ['AI researcher', 'pioneered autonomous driving']
-'Walter F. Tichy', 0, ['RCS']
-'Seinosuke Toda', 0, ['computation complexity', 'recipient of 1998 Gödel Prize']
-'Linus Torvalds', 0, ['Linux kernel', 'Git']
-'Leonardo Torres Quevedo', 8, ['invented El Ajedrecista the chess player in 1912', 'introduced the idea of floating-point arithmetic. In 1920', 'built an early electromechanical device of the Analytical Engine.']
-'Godfried Toussaint', 0, ['computational geometry', 'computational music theory']
-'Gloria Townsend', 1, []
-'Edwin E. Tozer', 0, ['business information systems']
-'Joseph F Traub', 0, ['computational complexity of scientific problems']
-'John V. Tucker', 0, ['computability theory']
-'John Tukey', 7, ['founder of FFT algorithm', 'box plot', exploratory data analysis and Coining the term 'bit']
-'Alan Turing', 1, ['British computing pioneer', 'Turing machine', 'algorithms', 'cryptology', 'computer architecture']
-'David Turner', 0, ['SASL', 'Kent Recursive Calculator', 'Miranda', 'IFIP WG 2.1 member']
-'Murray Turoff', 1, ['computer-mediated communication']
-'Jeffrey D. Ullman', 4, ['compilers', 'databases', 'complexity theory']
-'Leslie Valiant', 6, ['computational complexity theory', 'computational learning theory']
-'Vladimir Vapnik', 11, ['pattern recognition', 'computational learning theory']
-'Moshe Vardi', 7, ['professor of computer science at Rice University']
-'Dorothy Vaughan', 0, []
-'Bernard Vauquois', 0, ['pioneered computer science in France', 'machine translation MT theory and practice including Vauquois triangle', 'ALGOL 60']
-'Umesh Vazirani', 1, []
-'Manuela M. Veloso', 3, []
-'François Vernadat', 0, ['enterprise modeling']
-'Richard Veryard', 0, ['enterprise modeling']
-'Sergiy Vilkomir', 1, ['software testing', 'RC/DC']
-'Paul Vitanyi', 0, ['Kolmogorov complexity', 'Information distance', 'Normalized compression distance', 'Normalized Google distance']
-'Andrew Viterbi', 8, ['Viterbi algorithm']
-'Jeffrey Scott Vitter', 0, ['external memory algorithms', 'compressed data structures', 'data compression', 'databases']
-'Paul Vixie', 0, ['DNS', 'BIND', 'PAIX', 'Internet Software Consortium', 'MAPS', 'DNSBL']
-'Eiiti Wada', 0, ['ALGOL N', 'IFIP WG 2.1 member', 'Japanese Industrial Standards JIS X 0208', '0212', 'Happy Hacking Keyboard']
-'David Wagner', 0, ['security', 'cryptography']
-'David Waltz', 2, []
-'James Z. Wang', 0, []
-'Steve Ward', 0, []
-'Manfred K. Warmuth', 1, ['computational learning theory']
-'David H. D. Warren', 0, ['AI', 'logic programming', 'Prolog', 'Warren Abstract Machine WAM']
-'Kevin Warwick', 4, ['artificial intelligence']
-'Jan Weglarz', 0, []
-'Philip Wadler', 4, ['functional programming', 'Haskell', 'Monad', 'Java', 'logic']
-'Peter Wegner', 2, ['object-oriented programming', 'interaction computer science']
-'Joseph Henry Wegstein', 0, ['ALGOL 58', 'ALGOL 60', 'IFIP WG 2.1 member', 'data processing technical standards', 'fingerprint analysis']
-'Peter J. Weinberger', 0, ['programming language design', the 'w' in AWK]
-'Mark Weiser', 0, ['ubiquitous computing']
-'Joseph Weizenbaum', 0, ['artificial intelligence', 'ELIZA']
-'David Wheeler', 3, ['EDSAC', 'subroutines']
-'Franklin H. Westervelt', 0, ['use of computers in engineering education', 'Michigan Terminal System MTS', 'ARPANET', 'distance learning']
-'Steve Whittaker', 3, ['human computer interaction', 'computer support for cooperative work', 'social media']
-'Jennifer Widom', 6, ['nontraditional data management']
-'Gio Wiederhold', 3, ['database management systems']
-'Norbert Wiener', 2, ['Cybernetics']
-'Adriaan van Wijngaarden', 1, ['Dutch pioneer; ARRA', 'ALGOL', 'IFIP WG 2.1 member']
-'Mary Allen Wilkes', 0, ['LINC developer', 'assembler-linker designer']
-'Maurice Vincent Wilkes', 5, ['microprogramming', 'EDSAC']
-'Yorick Wilks', 1, ['computational linguistics', 'artificial intelligence']
-'James H. Wilkinson', 3, ['numerical analysis']
-'Sophie Wilson', 6, ['ARM architecture']
-'Shmuel Winograd', 0, ['Coppersmith–Winograd algorithm']
-'Terry Winograd', 1, ['artificial intelligence', 'SHRDLU']
-'Patrick Winston', 1, ['artificial intelligence']
-'Niklaus Wirth', 5, ['ALGOL W', 'IFIP WG 2.1 member', 'Pascal', 'Modula', 'Oberon']
-'Neil Wiseman', 0, ['computer graphics']
-'Dennis E. Wisnosky', 0, ['Integrated Computer-Aided Manufacturing ICAM', 'IDEF']
-'Stephen Wolfram', 1, ['Mathematica']
-'Mike Woodger', 0, ['Pilot ACE', 'ALGOL 60', 'Ada programming language']
-'Philip Woodward', 3, ['ambiguity function', 'sinc function', 'comb operator', 'rep operator', 'ALGOL 68-R']
-'Beatrice Helen Worsley', 0, ['wrote the first PhD dissertation involving modern computers; was one of the people who wrote Transcode']
-'Steve Wozniak', 0, ['engineered first generation personal computers at Apple Computer']
-'Jie Wu', 0, ['computer networks']
-'William Wulf', 0, ['BLISS system programming language + optimizing compiler', 'Hydra operating system', 'Tartan Laboratories']
-'Mihalis Yannakakis', 1, []
-'Andrew Chi-Chih Yao', 4, []
-'John Yen', 2, []
-'Nobuo Yoneda', 0, ['Yoneda lemma', 'Yoneda product', 'ALGOL', 'IFIP WG 2.1 member']
-'Edward Yourdon', 1, ['Structured Systems Analysis and Design Method']
-'Moti Yung', 6, []
-'Lotfi Zadeh', 12, ['fuzzy logic']
-'Hans Zantema', 0, ['termination analysis']
-'Arif Zaman', 0, ['pseudo-random number generator']
-'Stanley Zdonik', 0, ['database management systems']
-'Hussein Zedan', 0, ['formal methods and real-time systems']
-'Shlomo Zilberstein', 0, ['artificial intelligence', 'anytime algorithms', 'automated planning', 'and decentralized POMDPs']
-'Jill Zimmerman', 0, ['James M. Beall Professor of Mathematics and Computer Science at Goucher College']
-'Konrad Zuse', 5, ['German pioneer of hardware and software']
+Name,Number,Education
+Atta ur Rehman Khan,0,Mobile Cloud Computing Cybersecurity IoT
+Wil van der Aalst,0,business process management process mining Petri nets
+Scott Aaronson,4,quantum computing and complexity theory
+Rediet Abebe,3,algorithms artificial intelligence
+Hal Abelson,1,intersection of computing and teaching
+Serge Abiteboul,4,database theory
+Samson Abramsky,4,game semantics
+Leonard Adleman,1,RSA DNA computing
+Manindra Agrawal,8,polynomial-time primality testing
+Luis von Ahn,3,human-based computation
+Alfred Aho,7,compilers book the 'a' in AWK
+Frances E. Allen,6,compiler optimization
+Gene Amdahl,2,supercomputer developer Amdahl Corporation founder
+David P. Anderson,2,volunteer computing
+Lisa Anthony,0,natural user interfaces
+Andrew Appel,0,compiler of text books
+Cecilia R. Aragon,1,invented treap human-centered data science
+Bruce Arden,0,programming language compilers (GAT Michigan Algorithm Decoder (MAD)) virtual memory architecture Michigan Terminal System (MTS)
+Angie Jones,0,[]
+Sanjeev Arora,0,PCP theorem
+"Winifred ""Tim"" Alice Asprey",0,established the computer science curriculum at Vassar College
+John Vincent Atanasoff,1,computer pioneer creator of Atanasoff Berry Computer (ABC)
+Shakuntala Atre,0,database theory
+Charles Babbage,1,invented first mechanical computer called the supreme mathematician
+Charles Bachman,3,American computer scientist known for Integrated Data Store
+Roland Carl Backhouse,0,mathematics of computer program construction algorithmic problem solving ALGOL
+John Backus,3,FORTRAN Backus–Naur form first complete compiler
+David F. Bacon,1,programming languages garbage collection
+David Bader,5,[]
+Victor Bahl,4,[]
+Anthony James Barr,0,SAS System
+Jean Bartik,1,"one of the first computer programmers on ENIAC (1946) one of the first Vacuum tube computers back when ""programming"" involved using cables dials and switches to physically rewire the machine; worked with John Mauchly toward BINAC (1949) EDVAC (1949) UNIVAC (1951) to develop early ""stored program"" computers"
+Andrew Barto,1,[]
+Friedrich L. Bauer,3,Stack (data structure) Sequential Formula Translation ALGOL software engineering Bauer–Fike theorem
+Rudolf Bayer,2,B-tree
+Gordon Bell,8,computer designer DEC VAX author: Computer Structures
+Steven M. Bellovin,0,network security
+Cecilia Berdichevsky,0,[]
+Tim Berners-Lee,5,World Wide Web
+Daniel J. Bernstein,0,qmail software as protected speech
+Peter Bernus,0,[]
+Abhay Bhushan,0,[]
+Dines Bjørner,1,Vienna Development Method (VDM) RAISE
+Gerrit Blaauw,0,one of the principal designers of the IBM System 360 line of computers
+Sue Black,1,[]
+David Blei,2,[]
+Dorothy Blum,0,National Security Agency
+Lenore Blum,3,complexity
+Manuel Blum,4,cryptography
+Barry Boehm,0,software engineering economics spiral development
+Corrado Böhm,0,author of the structured program theorem
+Kurt Bollacker,0,[]
+Jeff Bonwick,0,invented slab allocation and ZFS
+Grady Booch,2,Unified Modeling Language Object Management Group
+George Boole,0,Boolean logic
+Andrew Booth,0,developed the first rotating drum storage device
+Kathleen Booth,0,developed the first assembly language
+Anita Borg,0,American computer scientist founder of Anita Borg Institute for Women and Technology
+Bert Bos,0,Cascading Style Sheets
+Mikhail Botvinnik,0,World Chess Champion computer scientist and electrical engineer pioneered early expert system AI and computer chess
+Jonathan Bowen,1,Z notation formal methods
+Stephen R. Bourne,3,Bourne shell portable ALGOL 68C compiler
+Harry Bouwman,0,Dutch Information systems researcher and Professor at the Åbo Akademi University
+Robert S. Boyer,0,string searching ACL2 theorem prover
+Karlheinz Brandenburg,1,Main mp3 contributor
+Gilles Brassard,3,[]
+Lawrence M. Breed,1,implementation of Iverson Notation (APL) co-developed APL\360 Scientific Time Sharing Corporation cofounder
+Jack E. Bresenham,0,early computer-graphics contributions including Bresenham's algorithm
+Sergey Brin,0,co-founder of Google
+David J. Brown,0,unified memory architecture binary compatibility
+Per Brinch Hansen,1,RC 4000 multiprogramming system operating system kernels microkernels monitors concurrent programming Concurrent Pascal distributed computing & processes parallel computing
+Sjaak Brinkkemper,0,methodology of product software development
+Fred Brooks,5,System 360 OS/360 The Mythical Man-Month No Silver Bullet
+Rod Brooks,1,[]
+Margaret Burnett,0,visual programming languages end-user software engineering and gender-inclusive software
+Michael Butler,0,Event-B
+Pino Caballero Gil,0,cryptography
+Tracy Camp,2,wireless computing
+Martin Campbell-Kelly,0,history of computing
+Rosemary Candlin,0,[]
+Rod Canion,0,[]
+Bryan Cantrill,0,invented DTrace
+Luca Cardelli,2,[]
+John Carmack,0,codeveloped Doom
+Michael Caspersen,7,[]
+Edwin Catmull,4,computer graphics
+Vint Cerf,12,Internet TCP/IP
+Gregory Chaitin,0,[]
+Robert Cailliau,0,Belgian computer scientist
+Zhou Chaochen,1,duration calculus
+Peter Chen,7,entity-relationship model data modeling conceptual model
+Leonardo Chiariglione,0,founder of MPEG
+Tracy Chou,0,computer scientist and activist
+Alonzo Church,0,mathematics of combinators lambda calculus
+Alberto Ciaramella,0,speech recognition patent informatics
+Edmund M. Clarke,1,model checking
+John Cocke,6,RISC
+Edgar F. Codd,1,formulated the database relational model
+Jacques Cohen,0,computer science professor
+Ian Coldwater,0,computer security
+Simon Colton,0,computational creativity
+Alain Colmerauer,0,Prolog
+Douglas Comer,0,Xinu
+Paul Justin Compton,0,Ripple Down Rules
+Richard W. Conway,2,CORC CUPL and PL/C languages and dialects; programming textbooks
+Gordon Cormack,0,co-invented dynamic Markov compression
+Stephen Cook,8,NP-completeness
+James Cooley,0,Fast Fourier transform (FFT)
+Danese Cooper,0,open-source software
+Fernando J. Corbató,2,Compatible Time-Sharing System (CTSS) Multics
+Kit Cosper,0,open-source software
+Patrick Cousot,8,abstract interpretation
+Ingemar Cox,4,digital watermarking
+Seymour Cray,0,Cray Research supercomputer
+Nello Cristianini,1,machine learning pattern analysis artificial intelligence
+Jon Crowcroft,2,networking
+W. Bruce Croft,0,[]
+Glen Culler,5,interactive computing computer graphics high performance computing
+Haskell Curry,0,[]
+Luigi Dadda,0,designer of the Dadda multiplier
+Ole-Johan Dahl,2,Simula object-oriented programming
+Ryan Dahl,0,founder of node.js project
+Andries van Dam,0,computer graphics hypertext
+Samir Das,0,Wireless Networks Mobile Computing Vehicular ad hoc network Sensor Networks Mesh networking Wireless ad hoc network
+Neil Daswani,0,computer security co-founder and co-director of Stanford Advanced Computer Security Program co-founder of Dasient (acquired by Twitter) former chief information security of LifeLock and Symantec's Consumer Business Unit
+Christopher J. Date,0,proponent of database relational model
+Terry A. Davis,0,creator of TempleOS
+Jeff Dean,0,Bigtable MapReduce Spanner of Google
+Erik Demaine,3,computational origami
+Tom DeMarco,1,[]
+Richard DeMillo,0,computer security software engineering educational technology
+Dorothy E. Denning,2,computer security
+Peter J. Denning,2,identified the use of an operating system's working set and balance set President of ACM
+Michael Dertouzos,0,Director of Massachusetts Institute of Technology (MIT) Laboratory for Computer Science (LCS) from 1974 to 2001
+Alexander Dewdney,0,[]
+Robert Dewar,0,IFIP WG 2.1 member ALGOL 68 chairperson; AdaCore cofounder president CEO
+Vinod Dham,0,P5 Pentium processor
+Jan Dietz,0,information systems theory and Design & Engineering Methodology for Organizations
+Whitfield Diffie,6,public key cryptography Diffie–Hellman key exchange
+Edsger W. Dijkstra,5,algorithms Dijkstra's algorithm Go To Statement Considered Harmful semaphore (programming) IFIP WG 2.1 member
+Matthew Dillon,0,DragonFly BSD with LWKT vkernel OS-level virtualisation file systems: HAMMER1 HAMMER2
+Alan Dix,0,wrote important university level textbook on human–computer interaction
+Jack Dongarra,15,linear algebra high performance computing (HCI)
+Marco Dorigo,0,ant colony optimization
+Paul Dourish,0,human computer interaction
+Charles Stark Draper,6,"designer of Apollo Guidance Computer ""father of inertial navigation"" MIT professor"
+Susan Dumais,1,information retrieval
+Adam Dunkels,0,Contiki lwIP uIP protothreads
+Jon Michael Dunn,11,founding dean of Indiana University School of Informatics information based logics especially relevance logic
+Schahram Dustdar,0,Distributed Systems TU Wien Austria
+Peter Eades,0,graph drawing
+Annie Easley,0,[]
+Wim Ebbinkhuijsen,0,COBOL
+John Presper Eckert,4,ENIAC
+Alan Edelman,7,Edelman's Law stochastic operator Interactive Supercomputing Julia (programming language) cocreator high performance computing numerical computing
+Brendan Eich,0,JavaScript Mozilla
+Philip Emeagwali,0,supercomputing
+E. Allen Emerson,2,model checking
+Douglas Engelbart,7,tiled windows hypertext computer mouse
+Barbara Engelhardt,1,latent variable models genomics quantitative trait locus (QTL)
+David Eppstein,0,[]
+Andrey Ershov,0,languages ALPHA Rapira; first Soviet time-sharing system AIST-0 electronic publishing system RUBIN multiprocessing workstation MRAMOR IFIP WG 2.1 member Aesthetics and the Human Factor in Programming
+Don Estridge,0,"led development of original IBM Personal Computer (PC); known as ""father of the IBM PC"""
+Oren Etzioni,1,MetaCrawler Netbot
+Christopher Riche Evans,0,[]
+David C. Evans,1,computer graphics
+Shimon Even,0,[]
+Scott Fahlman,1,[]
+Edward Feigenbaum,4,intelligence
+Edward Felten,1,computer security
+Tim Finin,1,[]
+Raphael Finkel,0,[]
+Donald Firesmith,0,[]
+Gary William Flake,0,[]
+Tommy Flowers,0,Colossus computer
+Robert Floyd,2,NP-completeness
+Sally Floyd,1,Internet congestion control
+Lawrence J. Fogel,0,evolutionary programming
+James D. Foley,1,[]
+Ken Forbus,0,[]
+"L. R. Ford, Jr.",0,[]
+Lance Fortnow,1,[]
+Mahmoud Samir Fayed,0,PWCT Ring
+Martin Fowler,0,[]
+Robert France,1,[]
+Herbert W. Franke,0,[]
+Edward Fredkin,1,[]
+Yoav Freund,1,[]
+Daniel P. Friedman,0,[]
+Charlotte Froese Fischer,8,computational theoretical physics
+Ping Fu,0,[]
+Xiaoming Fu,0,[]
+Kunihiko Fukushima,1,neocognitron artificial neural networks convolutional neural network architecture unsupervised learning deep learning
+D. R. Fulkerson,1,[]
+Richard P. Gabriel,2,Maclisp Common Lisp Worse is Better League for Programming Freedom Lucid Inc. XEmacs
+Zvi Galil,3,[]
+Bernard Galler,0,MAD (programming language)
+Hector Garcia-Molina,1,[]
+Michael Garey,0,NP-completeness
+Hugo de Garis,0,[]
+Bill Gates,4,cofounder of Microsoft
+David Gelernter,1,[]
+Lisa Gelobter,0,was the Chief Digital Service Officer for the U.S. Department of Education founder of teQuitable
+Charles Geschke,3,[]
+Zoubin Ghahramani,1,[]
+Sanjay Ghemawat,1,[]
+Jeremy Gibbons,0,generic programming functional programming formal methods computational biology bioinformatics
+Juan E. Gilbert,1,human-centered computing
+Lee Giles,7,CiteSeer
+Seymour Ginsburg,0,formal languages automata theory AFL theory database theory
+Robert L. Glass,0,[]
+Kurt Gödel,3,computability; not a computer scientist per se but his work was invaluable in the field
+Ashok Goel,1,[]
+Joseph Goguen,0,[]
+Hardik Gohel,0,[]
+E. Mark Gold,0,Language identification in the limit
+Adele Goldberg,0,Smalltalk
+Andrew V. Goldberg,1,algorithms algorithm engineering
+Ian Goldberg,0,cryptographer off-the-record messaging
+Judy Goldsmith,0,[]
+Oded Goldreich,1,cryptography computational complexity theory
+Shafi Goldwasser,11,cryptography computational complexity theory
+Gene Golub,0,Matrix computation
+Martin Charles Golumbic,0,algorithmic graph theory
+Gastón Gonnet,0,cofounder of Waterloo Maple Inc.
+Ian Goodfellow,0,machine learning
+James Gosling,1,Network extensible Window System (NeWS) Java
+Paul Graham,0,Viaweb On Lisp Arc
+Robert M. Graham,0,programming language compilers (GAT Michigan Algorithm Decoder (MAD)) virtual memory architecture Multics
+Susan L. Graham,5,compilers programming environments
+Jim Gray,2,database
+Sheila Greibach,0,Greibach normal form Abstract family of languages (AFL) theory
+David Gries,4,The Science of Programming Interference freedom Member Emeritus IFIP WG 2.3 on Programming Methodology
+Ralph Griswold,0,SNOBOL
+Bill Gropp,2,Message Passing Interface Portable Extensible Toolkit for Scientific Computation (PETSc)
+Tom Gruber,0,ontology engineering
+Shelia Guberman,0,handwriting recognition
+Ramanathan V. Guha,0,Resource Description Framework (RDF) Netscape RSS Epinions
+Neil J. Gunther,0,computer performance analysis capacity planning
+Jürg Gutknecht,0,with Niklaus Wirth: Lilith computer; Modula-2 Oberon Zonnon programming languages; Oberon operating system
+Michael Guy,0,Phoenix work on number theory computer algebra higher dimension polyhedra theory; with John Horton Conway
+Robert Griesemer,0,Go language
+Nico Habermann,0,work on operating systems software engineering inter-process communication process synchronization deadlock avoidance software verification programming languages: ALGOL 60 BLISS Pascal Ada
+Philipp Matthäus Hahn,0,mechanical calculator
+Eldon C. Hall,0,Apollo Guidance Computer
+Wendy Hall,1,[]
+Joseph Halpern,3,[]
+Margaret Hamilton,1,ultra-reliable software design
+Richard Hamming,4,Hamming code founder of the Association for Computing Machinery
+Jiawei Han,0,data mining
+Frank Harary,0,graph theory
+Juris Hartmanis,1,computational complexity theory
+Johan Håstad,4,computational complexity theory
+Les Hatton,1,software failure and vulnerabilities
+Igor Hawryszkiewycz,0,American computer scientist and organizational theorist
+He Jifeng,0,provably correct systems
+Eric Hehner,0,predicative programming formal methods quote notation ALGOL
+Martin Hellman,9,encryption
+Gernot Heiser,6,operating system teaching research commercialising Open Kernel Labs OKL4 Wombat
+James Hendler,0,Semantic Web
+John L. Hennessy,9,computer architecture
+Andrew Herbert,0,[]
+Carl Hewitt,0,[]
+Kelsey Hightower,0,open source cloud computing
+Danny Hillis,2,Connection Machine
+Geoffrey Hinton,9,[]
+Julia Hirschberg,10,[]
+Tin Kam Ho,0,artificial intelligence machine learning
+C. A. R. Hoare,6,logic rigor communicating sequential processes (CSP)
+Louis Hodes,0,Lisp pattern recognition logic programming cancer research
+Betty Holberton,4,ENIAC programmer developed the first Sort Merge Generator
+John Henry Holland,3,genetic algorithms
+Herman Hollerith,3,invented recording of data on a machine readable medium using punched cards
+Gerard Holzmann,1,software verification logic model checking (SPIN)
+John Hopcroft,8,compilers
+Grace Hopper,9,developed early compilers: FLOW-Matic COBOL; worked on UNIVAC; gave speeches on computer history where she gave out nano-seconds
+Eric Horvitz,0,artificial intelligence
+Alston Householder,0,[]
+Paul Hudak,6,Haskell language design textbooks on it and computer music
+David A. Huffman,1,Huffman coding used in data compression
+John Hughes,0,structuring computations with arrows; QuickCheck randomized program testing framework; Haskell language design
+Roger Hui,1,co-created J language
+Watts Humphrey,1,Personal Software Process (PSP) Software quality Team Software Process (TSP)
+Sandra Hutchins,0,[]
+Jean Ichbiah,0,Ada
+Roberto Ierusalimschy,0,Lua (programming language)
+Dan Ingalls,2,Smalltalk BitBlt Lively Kernel
+Mary Jane Irwin,3,[]
+Kenneth E. Iverson,4,APL J
+Ivar Jacobson,0,Unified Modeling Language Object Management Group
+Anil K. Jain,10,[]
+Ramesh Jain,0,[]
+Jonathan James,0,[]
+David S. Johnson,2,[]
+Stephen C. Johnson,0,[]
+Cliff Jones,0,Vienna Development Method (VDM)
+Michael I. Jordan,5,[]
+Mathai Joseph,1,[]
+Aravind K. Joshi,0,[]
+Bill Joy,4,Sun Microsystems BSD UNIX vi csh
+Dan Jurafsky,2,natural language processing
+William Kahan,4,numerical analysis
+Robert E. Kahn,12,TCP/IP
+Avinash Kak,0,digital image processing
+Poul-Henning Kamp,0,invented GBDE FreeBSD Jails Varnish cache
+David Karger,1,[]
+Richard Karp,10,NP-completeness
+Narendra Karmarkar,0,Karmarkar's algorithm
+Marek Karpinski,0,NP optimization problems
+Ted Kaehler,0,Smalltalk Squeak HyperCard
+Alan Kay,3,Dynabook Smalltalk overlapping windows
+Neeraj Kayal,0,AKS primality test
+Manolis Kellis,3,computational biology
+John George Kemeny,1,the language BASIC
+Ken Kennedy,0,compiling for parallel and vector machines
+Brian Kernighan,0,Unix the 'k' in AWK
+Carl Kesselman,0,grid computing
+Gregor Kiczales,0,CLOS reflection aspect-oriented programming
+Peter T. Kirstein,3,Internet
+Stephen Cole Kleene,2,Kleene closure recursion theory
+Dan Klein,4,Natural language processing Machine translation
+Leonard Kleinrock,5,ARPANET queueing theory packet switching hierarchical routing
+Donald Knuth,13,The Art of Computer Programming MIX/MMIX TeX literate programming
+Andrew Koenig,0,C++
+Daphne Koller,5,Artificial intelligence bayesian network
+Michael Kölling,3,BlueJ
+Andrey Nikolaevich Kolmogorov,7,algorithmic complexity theory
+Janet L. Kolodner,1,case-based reasoning
+David Korn,0,KornShell
+Kees Koster,0,ALGOL 68
+Robert Kowalski,1,logic programming
+John Koza,0,genetic programming
+John Krogstie,0,SEQUAL framework
+Joseph Kruskal,0,Kruskal's algorithm
+Maarja Kruusmaa,0,underwater roboticist
+Thomas E. Kurtz,2,BASIC programming language; Dartmouth College computer professor
+Richard E. Ladner,5,[]
+Monica S. Lam,0,[]
+Leslie Lamport,6,algorithms for distributed computing LaTeX
+Butler Lampson,6,SDS 940 founding member Xerox PARC Xerox Alto Turing Award
+Peter Landin,0,ISWIM J operator SECD machine off-side rule syntactic sugar ALGOL IFIP WG 2.1 member advanced lambda calculus to model programming languages (aided functional programming) denotational semantics
+Tom Lane,0,Independent JPEG Group PostgreSQL Portable Network Graphics (PNG)
+Börje Langefors,0,[]
+Chris Lattner,2,creator of Swift (programming language) and LLVM compiler infrastructure
+Steve Lawrence,0,[]
+Edward D. Lazowska,0,[]
+Joshua Lederberg,3,[]
+Manny M Lehman,2,[]
+Charles E. Leiserson,0,cache-oblivious algorithms provably good work-stealing coauthor of Introduction to Algorithms
+Douglas Lenat,1,artificial intelligence Cyc
+Yann LeCun,3,[]
+Rasmus Lerdorf,0,PHP
+Max Levchin,0,Gausebeck–Levchin test and PayPal
+Leonid Levin,1,computational complexity theory
+Kevin Leyton-Brown,1,artificial intelligence
+J.C.R. Licklider,0,[]
+David Liddle,0,[]
+Jochen Liedtke,0,microkernel operating systems Eumel L3 L4
+John Lions,0,Lions' Commentary on UNIX 6th Edition with Source Code (Lions Book)
+Charles H. Lindsey,0,IFIP WG 2.1 member Revised Report on ALGOL 68
+Richard J. Lipton,1,computational complexity theory
+Barbara Liskov,3,programming languages
+Yanhong Annie Liu,0,programming languages algorithms program design program optimization software systems optimizing analysis and transformations intelligent systems distributed computing computer security IFIP WG 2.1 member
+Darrell Long,2,computer data storage computer security
+Patricia D. Lopez,1,broadening participation in computing
+Gillian Lovegrove,0,[]
+Ada Lovelace,0,first programmer
+David Luckham,0,Lisp Automated theorem proving Stanford Pascal Verifier Complex event processing Rational Software cofounder (Ada compiler)
+Eugene Luks,0,[]
+Nancy Lynch,7,[]
+Nadia Magnenat Thalmann,2,computer graphics virtual actor
+Tom Maibaum,1,[]
+Simon Marlow,1,Haskell developer book author; co-developer: Glasgow Haskell Compiler Haxl remote data access library
+Zohar Manna,4,fuzzy logic
+James Martin,1,information engineering
+Robert C. Martin,0,software craftsmanship
+John Mashey,0,[]
+Yuri Matiyasevich,3,solving Hilbert's tenth problem
+Yukihiro Matsumoto,0,Ruby (programming language)
+John Mauchly,3,designed ENIAC first general-purpose electronic digital computer as well as EDVAC BINAC and UNIVAC I the first commercial computer; worked with Jean Bartik on ENIAC and Grace Murray Hopper on UNIVAC
+Ujjwal Maulik,0,[]
+Derek McAuley,1,ubiquitous computing computer architecture networking
+John McCarthy,6,Lisp (programming language) ALGOL IFIP WG 2.1 member artificial intelligence
+Andrew McCallum,1,[]
+Douglas McIlroy,0,macros pipes Unix philosophy
+Chris McKinstry,0,artificial intelligence Mindpixel
+Marshall Kirk McKusick,0,BSD Berkeley Fast File System
+Lambert Meertens,2,ALGOL 68 IFIP WG 2.1 member ABC (programming language)
+Kurt Mehlhorn,4,algorithms data structures LEDA
+Dora Metcalf,0,entrepreneur engineer and mathematician
+Bertrand Meyer,0,Eiffel (programming language)
+Silvio Micali,3,cryptography
+Robin Milner,5,ML (programming language)
+Jack Minker,2,database logic
+Marvin Minsky,6,artificial intelligence perceptrons Society of Mind
+James G. Mitchell,1,WATFOR compiler Mesa (programming language) Spring (operating system) ARM architecture
+Tom M. Mitchell,1,[]
+Arvind Mithal,0,formal verification of large digital systems developing dynamic dataflow architectures parallel computing programming languages (Id pH) compiling on parallel machines
+Paul Mockapetris,4,Domain Name System (DNS)
+Cleve Moler,2,numerical analysis MATLAB
+Faron Moller,0,concurrency theory
+John P. Moon,0,inventor Apple Inc.
+Charles H. Moore,0,Forth language
+Edward F. Moore,0,Moore machine
+Gordon Moore,9,Moore's law
+J Strother Moore,0,string searching ACL2 theorem prover
+Roger Moore,4,co-developed APL\360 created IPSANET co-founded I. P. Sharp Associates
+Hans Moravec,0,robotics
+Carroll Morgan,0,formal methods
+Robert Tappan Morris,0,Morris worm
+Joel Moses,0,Macsyma
+Rajeev Motwani,1,randomized algorithm
+Oleg A. Mukhanov,0,quantum computing developer co-founder and CTO of SeeQC
+Stephen Muggleton,4,Inductive Logic Programming
+Klaus-Robert Müller,1,machine learning artificial intelligence
+Alan Mycroft,0,programming languages
+Brad A. Myers,1,human-computer interaction
+Mihai Nadin,0,anticipation research
+Makoto Nagao,1,machine translation natural language processing digital library
+Frieder Nake,0,pioneered computer arts
+Bonnie Nardi,0,human–computer interaction
+Peter Naur,2,Backus–Naur form (BNF) ALGOL 60 IFIP WG 2.1 member
+Roger Needham,1,computer security
+James G. Nell,0,Generalised Enterprise Reference Architecture and Methodology (GERAM)
+Greg Nelson,1,satisfiability modulo theories extended static checking program verification Modula-3 committee Simplify theorem prover in ESC/Java
+Bernard de Neumann,0,massively parallel autonomous cellular processor software engineering research
+Klara Dan von Neumann,0,early computers ENIAC programmer and control designer
+John von Neumann,6,early computers von Neumann machine set theory functional analysis mathematics pioneer linear programming quantum mechanics
+Allen Newell,5,artificial intelligence Computer Structures
+Max Newman,3,Colossus computer MADM
+Andrew Ng,8,artificial intelligence machine learning robotics
+Nils John Nilsson,0,artificial intelligence
+G.M. Nijssen,0,Nijssen's Information Analysis Methodology (NIAM) object-role modeling
+Tobias Nipkow,0,proof assistance
+Maurice Nivat,7,theoretical computer science Theoretical Computer Science journal ALGOL IFIP WG 2.1 member
+Phiwa Nkambule,3,Fintech artificial intelligence machine learning robotics
+Jerre Noe,0,computerized banking
+Peter Nordin,0,artificial intelligence genetic programming evolutionary robotics
+Donald Norman,0,user interfaces usability
+Peter Norvig,2,artificial intelligence Director of Research at Google
+George Novacky,0,University of Pittsburgh: assistant department chair senior lecturer in computer science assistant dean of CAS for undergraduate studies
+Kristen Nygaard,4,Simula object-oriented programming
+Martin Odersky,0,Scala programming language
+Peter O'Hearn,9,separation logic bunched logic Infer Static Analyzer
+T. William Olle,0,Ferranti Mercury
+Steve Omohundro,0,[]
+Severo Ornstein,0,[]
+John O'Sullivan,2,Wi-Fi
+John Ousterhout,2,Tcl programming language
+Mark Overmars,0,video game programming
+Susan Owicki,0,interference freedom
+Larry Page,0,co-founder of Google
+Sankar Pal,1,[]
+Paritosh Pandya,1,[]
+Christos Papadimitriou,5,[]
+David Park,0,first Lisp implementation expert in fairness program schemas bisimulation in concurrent computing
+David Parnas,0,information hiding modular programming
+DJ Patil,0,former Chief Data Scientist of United States
+Yale Patt,0,Instruction-level parallelism speculative architectures
+David Patterson,6,reduced instruction set computer (RISC) RISC-V redundant arrays of inexpensive disks (RAID) Berkeley Network of Workstations (NOW)
+Mike Paterson,2,algorithms analysis of algorithms (complexity)
+Mihai Pătraşcu,0,data structures
+Lawrence Paulson,1,ML
+Randy Pausch,5,"human–computer interaction Carnegie professor ""Last Lecture"""
+Juan Pavón,0,software agents
+Judea Pearl,5,artificial intelligence search algorithms
+Alan Perlis,2,Programming Pearls
+Radia Perlman,0,spanning tree protocol
+Pier Giorgio Perotto,0,computer designer at Olivetti designer of the Programma 101 programmable calculator
+Rózsa Péter,0,recursive function theory
+Simon Peyton Jones,1,functional programming Glasgow Haskell Compiler C--
+Kathy Pham,0,data artificial intelligence civic technology healthcare ethics
+Roberto Pieraccini,0,speech technologist engineering director at Google
+Gordon Plotkin,3,[]
+Amir Pnueli,2,temporal logic
+Willem van der Poel,1,computer graphics robotics geographic information systems imaging multimedia virtual environments games
+Cicely Popplewell,0,British software engineer in 1960s
+Emil Post,0,mathematics
+Jon Postel,1,Internet
+Franco Preparata,2,computer engineering computational geometry parallel algorithms computational biology
+William H. Press,0,numerical algorithms
+Rapelang Rabana,0,[]
+Grzegorz Rozenberg,0,natural computing automata theory graph transformations and concurrent systems
+Michael O. Rabin,10,nondeterministic machine
+Dragomir R. Radev,0,natural language processing information retrieval
+T. V. Raman,1,accessibility Emacspeak
+Brian Randell,0,ALGOL 60 software fault tolerance dependability pre-1950 history of computing hardware
+Anders P. Ravn,2,Duration Calculus
+Raj Reddy,6,artificial intelligence
+David P. Reed,0,[]
+Trygve Reenskaug,0,model–view–controller (MVC) software architecture pattern
+John C. Reynolds,1,continuations definitional interpreters defunctionalization Forsythe Gedanken language intersection types polymorphic lambda calculus relational parametricity separation logic ALGOL
+Joyce K. Reynolds,0,Internet
+Reinder van de Riet,0,Editor: Europe of Data and Knowledge Engineering COLOR-X event modeling language
+Bernard Richards,0,medical informatics
+Martin Richards,1,BCPL
+Adam Riese,0,[]
+C. J. van Rijsbergen,0,[]
+Dennis Ritchie,8,C (programming language) Unix
+Ron Rivest,5,RSA MD5 RC4
+Ken Robinson,1,formal methods
+Colette Rolland,0,REMORA methodology meta modelling
+John Romero,0,codeveloped Doom
+Azriel Rosenfeld,3,[]
+Douglas T. Ross,3,Automatically Programmed Tools (APT) Computer-aided design structured analysis and design technique ALGOL X
+Guido van Rossum,1,Python (programming language)
+M. A. Rothman,0,UEFI
+Winston W. Royce,0,waterfall model
+Rudy Rucker,0,mathematician writer educator
+Steven Rudich,1,complexity theory cryptography
+Jeff Rulifson,0,[]
+James Rumbaugh,0,Unified Modeling Language Object Management Group
+Peter Ružička,0,Slovak computer scientist and mathematician
+George Sadowsky,0,[]
+Mehrnoosh Sadrzadeh,0,[]
+Umar Saif,0,[]
+Gerard Salton,0,information retrieval
+Jean E. Sammet,3,programming languages
+Claude Sammut,0,artificial intelligence researcher
+Carl Sassenrath,0,operating systems programming languages Amiga REBOL
+Mahadev Satyanarayanan,5,file systems distributed systems mobile computing pervasive computing
+Walter Savitch,0,discovery of complexity class NL Savitch's theorem natural language processing mathematical linguistics
+Jonathan Schaeffer,2,[]
+Wilhelm Schickard,0,one of the first calculating machines
+Jürgen Schmidhuber,0,artificial intelligence deep learning artificial neural networks recurrent neural networks Gödel machine artificial curiosity meta-learning
+Steve Schneider,0,formal methods security
+Bruce Schneier,0,cryptography security
+Fred B. Schneider,5,concurrent and distributed computing
+Sarita Schoenebeck,0,human–computer interaction
+Glenda Schroeder,0,command-line shell e-mail
+Bernhard Schölkopf,10,machine learning artificial intelligence
+Dana Scott,6,domain theory
+Michael L. Scott,0,programming languages algorithms distributed computing
+Robert Sedgewick,1,algorithms data structures
+Ravi Sethi,0,compilers 2nd Dragon Book
+Nigel Shadbolt,1,[]
+Adi Shamir,6,RSA cryptanalysis
+Claude Shannon,10,information theory
+David E. Shaw,0,computational finance computational biochemistry parallel architectures
+Cliff Shaw,0,systems programmer artificial intelligence
+Scott Shenker,5,networking
+Shashi Shekhar,0,[]
+Ben Shneiderman,1,human–computer interaction information visualization
+Edward H. Shortliffe,0,MYCIN (medical diagnostic expert system)
+Daniel Siewiorek,4,electronic design automation reliability computing context aware mobile computing wearable computing computer-aided design rapid prototyping fault tolerance
+Joseph Sifakis,1,model checking
+Herbert A. Simon,10,artificial intelligence
+Munindar P. Singh,5,multiagent systems software engineering artificial intelligence social networks
+Ramesh Sitaraman,0,helped build Akamai's high performance network
+Daniel Sleator,1,splay tree amortized analysis
+Aaron Sloman,0,artificial intelligence and cognitive science
+Arne Sølvberg,0,information modelling
+Brian Cantwell Smith,0,reflection (computer science) 3lisp
+David Canfield Smith,1,invented interface icons programming by demonstration developed graphical user interface Xerox Star; Xerox PARC researcher cofounded Dest Systems Cognition
+Steven Spewak,0,enterprise architecture planning
+Carol Spradling,0,[]
+Robert Sproull,0,[]
+Rohini Kesavan Srihari,0,information retrieval text analytics multilingual text mining
+Sargur Srihari,3,pattern recognition machine learning computational criminology CEDAR-FOX
+Maciej Stachowiak,0,GNOME Safari WebKit
+Richard Stallman,5,GNU Project
+Ronald Stamper,0,[]
+Richard E. Stearns,2,computational complexity theory
+"Guy L. Steele, Jr.",2,Scheme Common Lisp
+Thomas Sterling,6,creator of Beowulf clusters
+Alexander Stepanov,0,generic programming
+W. Richard Stevens,0,author of books including TCP/IP Illustrated and Advanced Programming in the Unix Environment
+Larry Stockmeyer,0,computational complexity distributed computing
+Salvatore Stolfo,0,computer security machine learning
+Michael Stonebraker,2,relational database practice and theory
+Olaf Storaasli,0,finite element machine linear algebra high performance computing
+Christopher Strachey,0,denotational semantics
+Volker Strassen,0,matrix multiplication integer multiplication Solovay–Strassen primality test
+Bjarne Stroustrup,11,C++
+Madhu Sudan,3,computational complexity theory coding theory
+Gerald Jay Sussman,2,Scheme
+Bert Sutherland,1,graphics Internet
+Ivan Sutherland,8,graphics
+Latanya Sweeney,0,Data privacy and algorithmic fairness
+Mario Szegedy,1,complexity theory quantum computing
+Parisa Tabriz,0,Google Director of Engineering also known as the Security Princess
+Roberto Tamassia,0,computational geometry computer security
+Andrew S. Tanenbaum,0,operating systems MINIX
+Austin Tate,1,Artificial Intelligence Applications AI Planning Virtual Worlds
+Bernhard Thalheim,1,conceptual modelling foundation
+Éva Tardos,5,[]
+Gábor Tardos,4,[]
+Robert Tarjan,3,splay tree
+Valerie Taylor,5,[]
+Mario Tchou,0,Italian engineer of Chinese descent leader of Olivetti Elea project
+Jaime Teevan,3,[]
+Shang-Hua Teng,1,analysis of algorithms
+Larry Tesler,0,human–computer interaction graphical user interface Apple Macintosh
+Avie Tevanian,0,Mach kernel team NeXT Mac OS X
+Charles P. Thacker,3,Xerox Alto Microsoft Research
+Daniel Thalmann,4,computer graphics virtual actor
+Ken Thompson,9,Unix
+Sebastian Thrun,3,AI researcher pioneered autonomous driving
+Walter F. Tichy,0,RCS
+Seinosuke Toda,0,computation complexity recipient of 1998 Gödel Prize
+Linus Torvalds,0,Linux kernel Git
+Leonardo Torres Quevedo,8,invented El Ajedrecista (the chess player) in 1912  a true automaton built to play chess without human guidance. In his work Essays on Automatics (1913) introduced the idea of floating-point arithmetic. In 1920 built an early electromechanical device of the Analytical Engine.
+Godfried Toussaint,0,computational geometry computational music theory
+Gloria Townsend,1,[]
+Edwin E. Tozer,0,business information systems
+Joseph F Traub,0,computational complexity of scientific problems
+John V. Tucker,0,computability theory
+John Tukey,7,founder of FFT algorithm box plot exploratory data analysis and Coining the term 'bit'
+Alan Turing,1,British computing pioneer Turing machine algorithms cryptology computer architecture
+David Turner,0,SASL Kent Recursive Calculator Miranda IFIP WG 2.1 member
+Murray Turoff,1,computer-mediated communication
+Jeffrey D. Ullman,4,compilers databases complexity theory
+Leslie Valiant,6,computational complexity theory computational learning theory
+Vladimir Vapnik,11,pattern recognition computational learning theory
+Moshe Vardi,7,professor of computer science at Rice University
+Dorothy Vaughan,0,[]
+Bernard Vauquois,0,pioneered computer science in France machine translation (MT) theory and practice including Vauquois triangle ALGOL 60
+Umesh Vazirani,1,[]
+Manuela M. Veloso,3,[]
+François Vernadat,0,enterprise modeling
+Richard Veryard,0,enterprise modeling
+Sergiy Vilkomir,1,software testing RC/DC
+Paul Vitanyi,0,Kolmogorov complexity Information distance Normalized compression distance Normalized Google distance
+Andrew Viterbi,8,Viterbi algorithm
+Jeffrey Scott Vitter,0,external memory algorithms compressed data structures data compression databases
+Paul Vixie,0,DNS BIND PAIX Internet Software Consortium MAPS DNSBL
+Eiiti Wada,0,ALGOL N IFIP WG 2.1 member Japanese Industrial Standards (JIS) X 0208 0212 Happy Hacking Keyboard
+David Wagner,0,security cryptography
+David Waltz,2,[]
+James Z. Wang,0,[]
+Steve Ward,0,[]
+Manfred K. Warmuth,1,computational learning theory
+David H. D. Warren,0,AI logic programming Prolog Warren Abstract Machine (WAM)
+Kevin Warwick,4,artificial intelligence
+Jan Weglarz,0,[]
+Philip Wadler,4,functional programming Haskell Monad Java logic
+Peter Wegner,2,object-oriented programming interaction (computer science)
+Joseph Henry Wegstein,0,ALGOL 58 ALGOL 60 IFIP WG 2.1 member data processing technical standards fingerprint analysis
+Peter J. Weinberger,0,programming language design the 'w' in AWK
+Mark Weiser,0,ubiquitous computing
+Joseph Weizenbaum,0,artificial intelligence ELIZA
+David Wheeler,3,EDSAC subroutines
+Franklin H. Westervelt,0,use of computers in engineering education conversational use of computers Michigan Terminal System (MTS) ARPANET distance learning
+Steve Whittaker,3,human computer interaction computer support for cooperative work social media
+Jennifer Widom,6,nontraditional data management
+Gio Wiederhold,3,database management systems
+Norbert Wiener,2,Cybernetics
+Adriaan van Wijngaarden,1,Dutch pioneer; ARRA ALGOL IFIP WG 2.1 member
+Mary Allen Wilkes,0,LINC developer assembler-linker designer
+Maurice Vincent Wilkes,5,microprogramming EDSAC
+Yorick Wilks,1,computational linguistics artificial intelligence
+James H. Wilkinson,3,numerical analysis
+Sophie Wilson,6,ARM architecture
+Shmuel Winograd,0,Coppersmith–Winograd algorithm
+Terry Winograd,1,artificial intelligence SHRDLU
+Patrick Winston,1,artificial intelligence
+Niklaus Wirth,5,ALGOL W IFIP WG 2.1 member Pascal Modula Oberon
+Neil Wiseman,0,computer graphics
+Dennis E. Wisnosky,0,Integrated Computer-Aided Manufacturing (ICAM) IDEF
+Stephen Wolfram,1,Mathematica
+Mike Woodger,0,Pilot ACE ALGOL 60 Ada (programming language)
+Philip Woodward,3,ambiguity function sinc function comb operator rep operator ALGOL 68-R
+Beatrice Helen Worsley,0,wrote the first PhD dissertation involving modern computers; was one of the people who wrote Transcode
+Steve Wozniak,0,engineered first generation personal computers at Apple Computer
+Jie Wu,0,computer networks
+William Wulf,0,BLISS system programming language + optimizing compiler Hydra operating system Tartan Laboratories
+Mihalis Yannakakis,1,[]
+Andrew Chi-Chih Yao,4,[]
+John Yen,2,[]
+Nobuo Yoneda,0,Yoneda lemma Yoneda product ALGOL IFIP WG 2.1 member
+Edward Yourdon,1,Structured Systems Analysis and Design Method
+Moti Yung,6,[]
+Lotfi Zadeh,12,fuzzy logic
+Hans Zantema,0,termination analysis
+Arif Zaman,0,pseudo-random number generator
+Stanley Zdonik,0,database management systems
+Hussein Zedan,0,formal methods and real-time systems
+Shlomo Zilberstein,0,artificial intelligence anytime algorithms automated planning and decentralized POMDPs
+Jill Zimmerman,0,James M. Beall Professor of Mathematics and Computer Science at Goucher College
+Konrad Zuse,5,German pioneer of hardware and software

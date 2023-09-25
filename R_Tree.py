@@ -2,6 +2,7 @@ import itertools
 from typing import List, Optional
 import math
 import pandas as pd
+from timeit import default_timer as timer
 
 
 class Point:
@@ -238,7 +239,6 @@ class RTree:
             if group2_underfull and not group1_underfull:
                 group2.extend(entries)
                 break
-            print("tr")
             # Find out which entry to insert next
             area1, area2 = rec1.area(), rec2.area()
             entry = _pick_next(entries, rec1, area1, rec2, area2)
@@ -319,19 +319,3 @@ def _pick_next(remaining_entries: List[Entry],
             max_diff = diff
             result = e
     return result
-
-
-if __name__ == '__main__':
-    df = pd.read_csv("data.txt", sep=" ", header=None)
-
-    r = RTree(4, 2)
-
-    for pd in range(len(df)):
-        # data_rec = Rectangle(Point(ord(df[0][pd]), df[1][pd]), Point(ord(df[0][pd]), df[1][pd]))
-        data_rec = Rectangle(Point(ord(df[0][pd]), df[1][pd]), Point(ord(df[0][pd]), df[1][pd]))
-        r.insertion(data_rec, pd)
-
-    a = r.search_tree(Rectangle(Point(ord('a'), 1), Point(ord('i'), 5)))
-    print(f"{len(a)} matches were found :")
-    print(a)
-    print(df.iloc[a])
