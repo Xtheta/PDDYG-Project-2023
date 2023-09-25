@@ -21,6 +21,9 @@ class Range_Tree:
            
         mid_val = len(y_nodelist)//2
         new_root = Node(y_nodelist[mid_val].point)
+
+        if len(y_nodelist)==1:
+            new_root.isLeaf = True
         
         new_root.left = self.build_range_tree(y_nodelist[:mid_val])
 
@@ -36,41 +39,45 @@ class Range_Tree:
         
         mid_val = len(node_list)//2
         node = node_list[mid_val]  
+
         if len(node_list)==1:
             node.isLeaf = True
+            node.assoc = None
 
-        node.assoc = self.build_range_tree(sorted(node_list, key=lambda node:node.point[1]))       # a bst for every node ordered by y-coordinates
-        
-        node.left = self.build_range_tree2D(node_list[:mid_val])
-        
-        node.right = self.build_range_tree2D(node_list[mid_val+1:])
+        else:
+            node.assoc = self.build_range_tree(sorted(node_list, key=lambda node:node.point[1]))       # a bst for every node ordered by y-coordinates
+            node.left = self.build_range_tree2D(node_list[:mid_val])
+            node.right = self.build_range_tree2D(node_list[mid_val+1:])
+
         return node
     
 
     #PRINTING FUNCTION 
-    def print_range_tree(self, root, n=0):
+    def print_range_tree(self, root, n=1):
         if root is None:
             return
         
-        print(n,". Point is:", root.point, root.isLeaf)
+        print("The node's point is:", root.point)
         if root.left != None:
-            print(n,". Left Subtree")
+            print("Left Child",n)
             self.print_range_tree(root.left,n+1)
         if root.right != None:
-            print(n,". Right Subtree")
+            print("Right Child",n)
             self.print_range_tree(root.right, n+1)
 
     # 1D RANGE SEARCH FUNCTION
     def withinRange(self, point, range , check):
+
         """
         Checks if the value of node is within the required range
         Arguments:
             point       : A point in tree
-            range       : A list containing range to be checked with
-            check       : specifies which option should be performed
+            range       : A two dimensional list containing the range to be checked
+            check       : specifies whether it's a one or two dimensional value check
         Returns :
             True if in range else False
         """
+
         if check == 1:
             x = point
             return (x >= range[0][0]  and x <= range[0][1] ) 
@@ -84,12 +91,14 @@ class Range_Tree:
             
     
     def getValue (self, node, enable):
+
         """
         Reads the desired value from node
         Arguments:
             point       : A point in tree
-            enable      : True when we need to read first coord of point when used as a helper function by 2D range search
+            enable      : True when we need to check the x-coordinate, False when we check the y-coordinate
         """
+
         if enable:
             value = node.point[0]
         else:
@@ -100,12 +109,12 @@ class Range_Tree:
     def FindSplitNode(self, root, p_min , p_max, enable):
 
         '''
-        Searches for a common node that splits the range
+        Returns the splitnode where the paths to p_min and p_max split
         Arguments:
             root        : The tree's root
-            p_min       : Starting range 
-            p_max       : Ending range 
-            enable      : True when we need to read first coord of point when used as a helper function by 2D range search
+            p_min       : Minimum value 
+            p_max       : Maximum value 
+            enable      : True when we need to check the x-coordinate, False when we check the y-coordinate
         Returns : A Node
         '''
 
@@ -122,21 +131,22 @@ class Range_Tree:
     
 
     def SearchRangeTree1d (self, root, p1, p2, enable = True):
+
         '''
         Performs 1D range search
         Arguments:
             root        : A Node in tree
-            p1          : Starting range 
-            p2          : Ending range 
-            enable      : True when we need to read first coord of point when used as a helper function by 2D range search
+            p1          : Minimum value for coordinate
+            p2          : Maximum value for coordinate
+            enable      : True when we need to check the x-coordinate, False when we check the y-coordinate
         '''
+
         nodes = []
-        splitnode = self.FindSplitNode(root , p1, p2, enable)                  # Find the node which the least common ancestor in the tree for given range
+        splitnode = self.FindSplitNode(root , p1, p2, enable)                 
         
         if splitnode == None:
             return nodes
         
-        # Check if the node is a valid node in range and also checks the surname of the node to ensure it isn't already included in the nodes list
         elif self.withinRange( self.getValue(splitnode, enable) , [(p1, p2)], 1):
             nodes.append(splitnode.point)
 
@@ -148,15 +158,17 @@ class Range_Tree:
 
 
     def SearchRangeTree2d (self, root, x1, x2, y1, y2):
+            
             """
             Performs 2D range search
             Arguments:
                 root        : A Node in tree
-                x1          : Starting range for x-coord
-                x2          : Ending range for x-coord
-                y1          : Starting range for y-coord
-                y2          : Ending range for y-coord
+                x1          : Minimum value for x-coord
+                x2          : Maximum value for x-coord
+                y1          : Minimum value for y-coord
+                y2          : Maximum value for y-coord
             """
+
             nodes = []
             splitnode = self.FindSplitNode(root, x1, x2, True)
 
@@ -166,24 +178,24 @@ class Range_Tree:
             elif self.withinRange(splitnode.point, [(x1, x2), (y1, y2)], 2) :
                 nodes.append(splitnode.point)
             
-            vl = splitnode.left                                                                # Traverse the nodes in left child of split node
+            vl = splitnode.left                                                          # Traverse the nodes in the left subtree of the split node
             while ( vl != None ):
-                if self.withinRange(vl.point, [(x1, x2), (y1, y2)], 2):                        # Check if the node is a valid node in range
+                if self.withinRange(vl.point, [(x1, x2), (y1, y2)], 2):                  # Check if the node is a valid node in range
                     nodes.append(vl.point)
 
-                if (x1 <= vl.point[0]):                                                        # Search the associated y-tree at the right child of current node 
+                if (x1 <= vl.point[0]):                                                  # Search the right child's associated y-tree  
                     if vl.right != None:
                         nodes += self.SearchRangeTree1d(vl.right.assoc, y1, y2, False)
                     vl = vl.left
                 else:
                     vl = vl.right
 
-            vr = splitnode.right                                                                 # Traverse the nodes in right child of split node
+            vr = splitnode.right                                                         # Traverse the nodes in right child of split node
             while ( vr != None ):
-                if self.withinRange(vr.point, [(x1, x2), (y1, y2)], 2):                          # Check if the node is a valid node in range
+                if self.withinRange(vr.point, [(x1, x2), (y1, y2)], 2):                  # Check if the node is a valid node in range
                         nodes.append(vr.point)
             
-                if ( x2 >= vr.point[0] ):                                                        # Search the associated tree at the left child of current node 
+                if ( x2 >= vr.point[0] ):                                                # Search the left child's associated y-tree  
                     if vr.left != None:
                         nodes += self.SearchRangeTree1d(vr.left.assoc, y1, y2, False)
                     vr = vr.right
