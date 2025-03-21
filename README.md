@@ -1,3 +1,4 @@
+# Multidimensional Data Structures Implementation and Comparison
 **Project Overview**  
 This project focuses on the implementation and experimental evaluation of multidimensional data structures using real-world datasets. The core operations under investigation include building, inserting, deleting, updating, and performing various types of queries such as similarity searches, k-nearest neighbors (kNN), interval queries, stabbing queries, and 3-sided queries. The goal is to assess the efficiency and effectiveness of these data structures in handling complex operations on multidimensional data, providing insights into their performance and scalability in practical scenarios.
 
