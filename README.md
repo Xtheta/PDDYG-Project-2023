@@ -1,6 +1,62 @@
-# Multidimensional Data Structures Implementation and Comparison
-**Project Overview**  
-This project focuses on the implementation and experimental evaluation of multidimensional data structures using real-world datasets. The core operations under investigation include building, inserting, deleting, updating, and performing various types of queries such as similarity searches, k-nearest neighbors (kNN), interval queries, stabbing queries, and 3-sided queries. The goal is to assess the efficiency and effectiveness of these data structures in handling complex operations on multidimensional data, providing insights into their performance and scalability in practical scenarios.
+# 📊 Multidimensional Data Structures – Implementation and Comparison
 
-**Implementation Details**  
-We implemented four widely used multidimensional data structures: K-D Trees, Quad Trees, Range Trees, and R-trees. These structures were used to index a dataset of computer science scientists sourced from [Wikipedia](https://en.wikipedia.org/wiki/List_of_computer_scientists), formatted as (Surname: String, #Awards: Integer, Education: text-vector). The indexing was performed on the first two fields (surname and number of awards) to enable queries identifying scientists whose surnames fall within a specified alphabetical range and whose number of awards exceeds a user-defined threshold. Subsequently, similarity queries were executed on the third field (education) using the Locality-Sensitive Hashing (LSH) method. For example, queries such as "Find computer science scientists from Wikipedia with an education similarity rate of >60%, whose surnames fall within the interval [A, G], and who have received at least 4 awards" were performed. Additionally, we conducted a comparative experimental analysis of the four methods: k-d trees + LSH, quad trees + LSH, Range Trees + LSH, and R-trees + LSH, to evaluate their performance in handling these complex queries.
+[![Python](https://img.shields.io/badge/Python-3.10+-blue)](https://www.python.org/)
+
+## 📌 Project Overview
+This project focuses on the **implementation and experimental evaluation of multidimensional data structures** using real-world datasets.  
+We study the performance of key operations:  
+- Building, inserting, deleting, updating  
+- Queries: similarity search, **k-nearest neighbors (kNN)**, interval queries, stabbing queries, and 3-sided queries  
+
+The goal is to **assess efficiency and scalability** in handling complex multidimensional queries.
+
+---
+
+## ⚙️ Implementation Details
+We implemented four widely used multidimensional data structures:
+- **K-D Tree**
+- **Quad Tree**
+- **Range Tree**
+- **R-Tree**
+
+### Dataset
+- Source: [Wikipedia – Computer Science Scientists](https://en.wikipedia.org/wiki/List_of_computer_scientists)  
+- Format: `(Surname: String, #Awards: Integer, Education: text-vector)`  
+- Indexing performed on:  
+  - **Surname** (alphabetical range)  
+  - **Number of Awards** (threshold filter)  
+
+### Query Example
+Using **Locality-Sensitive Hashing (LSH)** for similarity on the education field:  
+
+> *"Find computer science scientists with an education similarity >60%, surname in [A, G], and at least 4 awards."*
+
+### Experimental Comparison
+We compared:
+- **K-D Tree + LSH**  
+- **Quad Tree + LSH**  
+- **Range Tree + LSH**  
+- **R-Tree + LSH**  
+
+📌 Metrics: query response time, memory efficiency, and scalability.
+
+---
+
+## 📂 Repository Structure
+- `KD_Tree.py` → K-D Tree implementation  
+- `Quad_Tree.py` → Quad Tree implementation  
+- `Range_Tree.py` → Range Tree implementation  
+- `R_Tree.py` → R-Tree implementation  
+- `lsh.py` → Locality-Sensitive Hashing for similarity search  
+- `main.py` → Run experiments and comparative analysis  
+- `scientists.csv` → Dataset of computer science scientists  
+- `webScaper.py` → Web scraper to collect dataset from Wikipedia  
+- `diagrams/` → Visualizations and analysis diagrams  
+
+---
+
+## 🚀 How to Run
+Clone the repo:
+```bash
+git clone https://github.com/Xtheta/PDDYG-Project-2023.git
+cd PDDYG-Project-2023
