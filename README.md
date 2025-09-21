@@ -67,13 +67,13 @@ Run the main script:
 python main.py
 ```
 
-📊 Results Summary
+## 📊 Results Summary
 - K-D Trees: Efficient for point queries and kNN searches; degrades with higher dimensions.
 - Quad Trees: Good for spatial partitioning; less memory-efficient in skewed datasets.
 - Range Trees: Strong for multidimensional range queries but higher preprocessing cost.
 - R-Trees: Best suited for spatial data with rectangles/regions; balanced performance overall.
 
-📖 References
+## 📖 References
 - [Bentley, J. L. "Multidimensional binary search trees used for associative searching." Commun. ACM (1975).](https://dl.acm.org/doi/pdf/10.1145/361002.361007)
 - [Guttman, A. "R-trees: A dynamic index structure for spatial searching." SIGMOD (1984).](https://dl.acm.org/doi/pdf/10.1145/971697.602266)
 - [Wikipedia: List of Computer Scientists](https://en.wikipedia.org/wiki/List_of_computer_scientists)
